@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1097 277">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9856e;
+        font-size: 200px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+        opacity: 0.135;
+      }
+    </style>
+  </defs>
+  <text id="ПИТАНИЕ" class="cls-1"><tspan x="0" y="216">ПИТАНИЕ</tspan></text>
+</svg>
