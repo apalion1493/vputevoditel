@@ -1,3 +1,11 @@
+body, html {
+    height: auto !important;
+}
+
+body {
+    position: relative;
+}
+
 .homeHeadBlock.selection.vputevoditel h1 {
     font-size: 52px;
 }
@@ -39,6 +47,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: .5s;
+}
+
+.header-section-title a:hover {
+    background: #ffffff;
+    color: #555555;
+    border-color: #555555;
+    transition: .5s;
 }
 
 .header-section-title a:before {
@@ -48,6 +64,12 @@
     height: 22px;
     position: absolute;
     left: 30px;
+    transition: .5s;
+}
+
+.header-section-title a:hover:before {
+    filter: invert(100%);
+    transition: .5s;
 }
 
 .header-section-title a span {
@@ -59,6 +81,7 @@
 .vputevoditel-navigation {
     background: #F3F3F5;
     position: relative;
+    overflow: hidden;
 }
 
 .vputevoditel-navigation__section {
@@ -191,6 +214,7 @@
 
 .vputevoditel-resorts {
     position: relative;
+    overflow: hidden;
 }
 
 .vputevoditel-resorts__first-block {
@@ -212,7 +236,7 @@
     z-index: 200;
     border-radius: 5px;
     background: #ffffff;
-    box-shadow: 0 10px 50px -18px #333;
+    box-shadow: 0 10px 36px -18px #333;
 }
 
 .vputevoditel-information-card__image {
@@ -322,9 +346,14 @@
     z-index: -1;
 }
 
-.vputevoditel-resorts__housing {
+.vputevoditel-resorts__housing,
+.internal-vputevoditel-page__housing {
     margin-top: 60px;
     margin-bottom: 70px;
+}
+
+.internal-vputevoditel-page__housing {
+    overflow: hidden;
 }
 
 .vputevoditel-resorts__housing h3 {
@@ -486,6 +515,7 @@
 .vputevoditel-transport {
     background: #F2F2F2;
     position: relative;
+    overflow: hidden;
 }
 
 .vputevoditel-transport__text {
@@ -666,13 +696,17 @@
 
 .vputevoditel-viza {
     margin-top: 44px;
+    overflow: hidden;
+}
+
+.vputevoditel-road {
+    overflow: hidden;
 }
 
 .vputevoditel-road__section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .vputevoditel-road__section-country {
@@ -805,6 +839,7 @@
     background: url("img/attractions-vputevod@2x.png") no-repeat center;
     width: 100%;
     background-size: 118% 107% !important;
+    overflow: hidden;
 }
 
 .vputevoditel-title__white {
@@ -819,28 +854,36 @@
     flex-wrap: wrap;
 }
 
+.vputevoditel-notes__section-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .vputevoditel-information-card__nesebr-info {
     background: url("img/nesebr-info-vputev@2x.png") no-repeat center;
-    background-size: 100% auto;
+    background-size: 101% auto;
     height: 362px;
 }
 
 .vputevoditel-information-card__monasteries {
     background: url("img/monasteries-vputevod@2x.png") no-repeat center;
-    background-size: 100% auto;
+    background-size: 101% auto;
     height: 362px;
 }
 
 .vputevoditel-information-card__fortress {
     background: url("img/fortresses-vputevod@2x.png") no-repeat center;
-    background-size: 100% auto;
+    background-size: 101% auto;
     height: 362px;
 }
 
 .vputevoditel-information-card__caves {
     background: url("img/caves-vputevod@2x.png") no-repeat center;
-    background-size: 100% auto;
+    background-size: 101% auto;
     height: 362px;
+    width: 100.1%;
 }
 
 .vputevoditel-attractions__container .vputevoditel-title {
@@ -1030,18 +1073,35 @@
     white-space: nowrap;
 }
 
-.vputevoditel-resorts__housing-list {
+.vputevoditel-resorts__housing-list,
+.internal-vputevoditel-page__housing-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.vputevoditel-resorts__housing-item {
+.vputevoditel-resorts__housing-item,
+.internal-vputevoditel-page__housing-item {
     /*max-width: 294px;*/
     /*width: 100%;*/
     margin-left: 10px;
     margin-right: 10px;
+    box-shadow: 0 10px 36px -18px #333;
+    margin-bottom: 20px;
+}
+
+.vputevoditel-resorts__housing-list .dataOffersBlock,
+.internal-vputevoditel-page__housing-list .dataOffersBlock {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+
+.vputevoditel-resorts__housing-list .presentDayPriceBlock,
+.internal-vputevoditel-page__housing-list .presentDayPriceBlock {
+    right: 10px;
 }
 
 .vputevoditel-resorts__housing h3 {
@@ -1069,11 +1129,13 @@
     margin-bottom: 30px;
 }
 
-.vputevoditel-resorts__housing-list .slick-dots {
+.vputevoditel-resorts__housing-list .slick-dots,
+.internal-vputevoditel-page__housing-list .slick-dots {
     bottom: -45px;
 }
 
-.vputevoditel-resorts__housing-list .slick-dots li button {
+.vputevoditel-resorts__housing-list .slick-dots li button,
+.internal-vputevoditel-page__housing-list .slick-dots li button {
     width: 40px;
     height: 10px;
     background: transparent;
@@ -1081,20 +1143,84 @@
     border-radius: 10px;
 }
 
-.vputevoditel-resorts__housing-list .slick-dots .slick-active  button {
+.vputevoditel-resorts__housing-list .slick-dots .slick-active button,
+.internal-vputevoditel-page__housing-list .slick-dots .slick-active button{
     background: #F9856E;
 }
 
-.vputevoditel-resorts__housing-list .slick-dots li {
+.vputevoditel-resorts__housing-list .slick-dots li,
+.internal-vputevoditel-page__housing-list .slick-dots li {
     width: 40px;
     height: 10px;
 }
 
-.vputevoditel-resorts__housing-list .slick-dots li button:before {
+.vputevoditel-resorts__housing-list .slick-dots li button:before,
+.internal-vputevoditel-page__housing-list .slick-dots li button:before {
     content: '';
 }
 
-@media (max-width: 1260px) {
+.vputevoditel-notes__section-main-info .vputevoditel-information-card {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.vputevoditel-resorts__housing-list .slick-prev,
+.vputevoditel-resorts__housing-list .slick-next {
+    z-index: 1;
+}
+
+.vputevoditel-resorts__housing-list .slick-prev {
+    left: 12px;
+}
+
+.vputevoditel-resorts__housing-list .slick-next {
+    right: 12px;
+}
+
+.vputevoditel-attractions__section-main-info .vputevoditel-information-card__four-block {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.vputevoditel-attractions__section-main-info .vputevoditel-information-card__four-block:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 1700px) {
+    .vputevoditel-food__right-image {
+        right: 0;
+    }
+
+    .vputevoditel-excursion__animale-img {
+        right: -20%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .vputevoditel-excursion__animale-img {
+        right: -10%;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .vputevoditel-excursion__animale-img {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .vputevoditel-excursion__animale-img {
+        right: -40%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .vputevoditel-excursion__animale-img {
+        right: -45%;
+    }
+}
+
+@media screen and (max-width: 1260px) {
     .vputevoditel-food__right-image {
         top: 0;
     }
@@ -1113,9 +1239,14 @@
     .vputevoditel-food__block-info {
         justify-content: space-around;
     }
+
+    .vputevoditel-excursion__animale-img {
+        display: none;
+    }
+
 }
 
-@media (max-width: 1257px) {
+@media screen and (max-width: 1257px) {
     .vputevoditel-information-card__four-block {
         max-width: 402px !important;
     }
@@ -1128,9 +1259,23 @@
     .vputevoditel-transport__block-info {
         justify-content: space-around;
     }
+
+    .vputevoditel-attractions__section-main-info {
+        justify-content: space-around;
+    }
+
+    .vputevoditel-notes__section-main-info {
+        justify-content: space-around;
+    }
 }
 
-@media (max-width: 1199.98px) {
+@media screen and (max-width: 1215px) {
+    .vputevoditel-navigation__container-item:nth-child(1):after, .vputevoditel-navigation__container-item:nth-child(2):after, .vputevoditel-navigation__container-item:nth-child(3):after, .vputevoditel-navigation__container-item:nth-child(4):after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
     .vputevoditel-resorts__first-block {
         flex-direction: column;
     }
@@ -1163,9 +1308,17 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .vputevoditel-road__section-country:after {
+        display: none;
+    }
+
+    .vputevoditel-medicine__img-bg {
+        display: none;
+    }
 }
 
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
     .header-section-title {
         flex-wrap: wrap;
         justify-content: center;
@@ -1200,9 +1353,23 @@
     .vputevoditel-food__block-info {
         justify-content: space-around;
     }
+
+    .vputevoditel-road__section {
+        flex-wrap: wrap;
+    }
+
+    .vputevoditel-medicine__block {
+        margin-bottom: 0;
+    }
 }
 
-@media (min-width: 784px) and (max-width: 969.98px) {
+@media screen and (max-width: 854px) {
+    .vputevoditel-attractions__section-main-info {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 784px) and (max-width: 969.98px) {
     .vputevoditel-viza__country-block {
         max-width: 100%;
         min-width: 186px;
@@ -1214,7 +1381,7 @@
     }
 }
 
-@media (max-width: 854px) {
+@media screen and (max-width: 854px) {
     .vputevoditel-food__block-info {
         justify-content: center;
     }
@@ -1223,16 +1390,541 @@
         margin-right: 5px !important;
         margin-left: 5px !important;
     }
-}
 
-@media (max-width: 620px) {
-    .vputevoditel-transport__block-info .vputevoditel-information-card {
-        margin-right: 0;
+    .vputevoditel-road__section {
+        justify-content: space-around;
     }
 }
 
-@media (max-width: 412px) {
+@media screen and (max-width: 767px) {
+    .homeHeadBlock.selection.vputevoditel h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .vputevoditel-attractions__section-another-info, .vputevoditel-notes__section-another-info {
+        flex-direction: column;
+    }
+
+    .vputevoditel-attractions__list, .vputevoditel-notes__list-info {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .vputevoditel-transport__block-info .vputevoditel-information-card {
+        margin-right: 0;
+    }
+
+    .vputevoditel-title {
+        font-size: 28px !important;
+    }
+
+    .vputevoditel-attractions__container .vputevoditel-title {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .homeHeadBlock.selection.vputevoditel .language {
+        display: none;
+    }
+
+    .vputevoditel-attractions__paragraph, .vputevoditel-notes__paragraph {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .vputevoditel-information-card__image {
+        height: 120px !important;
+    }
+
+    .vputevoditel-attractions__section-main-info .vputevoditel-information-card__image {
+        height: 320px !important;
+    }
+}
+
+@media screen and (max-width: 412px) {
     .vputevoditel-viza__country {
         justify-content: center;
+    }
+}
+
+
+
+
+.internal-vputevoditel-page__other {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.internal-vputevoditel-page__other-block {
+    cursor: pointer;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.internal-vputevoditel-page__other-btn-span.color-orange {
+    color: #F9856E;
+}
+
+.internal-vputevoditel-page .internal-vputevoditel-page__other-btn {
+    background: #1FA1AF;
+    width: 30px;
+    height: 4px;
+    display: block;
+    border-radius: 15px;
+    padding: 0;
+    position: relative;
+    margin-right: 22px;
+}
+
+.internal-vputevoditel-page .internal-vputevoditel-page__other-btn:before {
+    content: '';
+    background: #1FA1AF;
+    width: 30px;
+    height: 4px;
+    display: block;
+    border-radius: 15px;
+    padding: 0;
+    position: absolute;
+    margin-right: 22px;
+    top: 8px;
+}
+
+.internal-vputevoditel-page .internal-vputevoditel-page__other-btn:after {
+    content: '';
+    background: #1FA1AF;
+    width: 30px;
+    height: 4px;
+    display: block;
+    border-radius: 15px;
+    padding: 0;
+    position: absolute;
+    margin-right: 22px;
+    bottom: 8px;
+}
+
+.internal-vputevoditel-page__other-block.color-orange .internal-vputevoditel-page__other-btn,
+.internal-vputevoditel-page__other-block.color-orange .internal-vputevoditel-page__other-btn:before,
+.internal-vputevoditel-page__other-block.color-orange .internal-vputevoditel-page__other-btn:after {
+    background: #F9856E;
+}
+
+.left-block-menu {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding-top: 62px;
+    display: flex;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.left-block-menu.active {
+    left: 0;
+}
+
+.left-block-menu__container {
+    box-shadow: 1px 10px 54px -7px #888888;
+    height: 100%;
+    background: #ffffff;
+    border-top-right-radius: 5px;
+    position: relative;
+    z-index: 300;
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.left-block-menu__hollow-block {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.left-block-menu__section-menu {
+    display: flex;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.left-block-menu__section-info {
+    position: relative;
+}
+
+.left-block-menu__tab-content {
+    background: #ffffff;
+    color: #1FA1AF;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.left-block-menu__tab-content a {
+    color: #1FA1AF;
+    line-height: 24px;
+}
+
+.left-block-menu__section-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #555555;
+}
+
+.left-block-menu__section-menu.active .left-block-menu__tab-content {
+    max-height: 100vh;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.left-block-menu__section-menu.active .left-block-menu__section-title {
+    color: #F9856E;
+}
+
+.left-block-menu__section-icon {
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12px;
+}
+
+.left-block-menu__section-icon i {
+    display: block;
+}
+
+.left-block-menu__icon-resorts {
+    background: url("img/seaside-resorts/hotel__vputevod.svg") no-repeat center;
+    width: 17px;
+    height: 22px;
+}
+
+.left-block-menu__icon-medicine {
+    background: url("img/seaside-resorts/vaccine__vputevod.svg") no-repeat center;
+    width: 16px;
+    height: 24px;
+}
+
+.left-block-menu__icon-nutrition {
+    background: url("img/seaside-resorts/fruit__vputevod.svg") no-repeat center;
+    width: 22px;
+    height: 22px;
+}
+
+.left-block-menu__icon-transport {
+    background: url("img/seaside-resorts/bus__vputevod.svg") no-repeat center;
+    width: 25px;
+    height: 32px;
+}
+
+.left-block-menu__icon-visas {
+    background: url("img/seaside-resorts/passport__vputevod.svg") no-repeat center;
+    width: 16px;
+    height: 21px;
+}
+
+.left-block-menu__icon-getting-there {
+    background: url("img/seaside-resorts/map-location__vputevod.svg") no-repeat center;
+    width: 22px;
+    height: 21px;
+}
+
+.left-block-menu__icon-water-parks {
+    background: url("img/seaside-resorts/aqua-park__vputevod.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+.left-block-menu__icon-sights {
+    background: url("img/seaside-resorts/sights__vputevod.svg") no-repeat center;
+    width: 23px;
+    height: 21px;
+}
+
+.left-block-menu__icon-tours {
+    background: url("img/seaside-resorts/like__vputevod.svg") no-repeat center;
+    width: 19px;
+    height: 21px;
+}
+
+.left-block-menu__icon-useful-know {
+    background: url("img/seaside-resorts/guide__vputevod.svg") no-repeat center;
+    width: 19px;
+    height: 25px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-resorts {
+    background: url("img/seaside-resorts/hotel__orange__vputevod.svg") no-repeat center;
+    width: 17px;
+    height: 22px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-medicine {
+    background: url("img/seaside-resorts/vaccine__orange__vputevod .svg") no-repeat center;
+    width: 16px;
+    height: 24px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-nutrition {
+    background: url("img/seaside-resorts/fruit__orange__vputevod.svg") no-repeat center;
+    width: 22px;
+    height: 22px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-transport {
+    background: url("img/seaside-resorts/bus__orange__vputevod.svg") no-repeat center;
+    width: 25px;
+    height: 32px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-visas {
+    background: url("img/seaside-resorts/passport__orange__vputevod.svg") no-repeat center;
+    width: 16px;
+    height: 21px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-getting-there {
+    background: url("img/seaside-resorts/map-location__orange__vputevod.svg") no-repeat center;
+    width: 22px;
+    height: 21px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-water-parks {
+    background: url("img/seaside-resorts/aqua-park__orange__vputevod.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-sights {
+    background: url("img/seaside-resorts/sights__orange__vputevod.svg") no-repeat center;
+    width: 23px;
+    height: 21px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-tours {
+    background: url("img/seaside-resorts/like__orange__vputevod.svg") no-repeat center;
+    width: 19px;
+    height: 21px;
+}
+
+.left-block-menu__section-icon.active .left-block-menu__icon-useful-know {
+    background: url("img/seaside-resorts/guide__orange__vputevod.svg") no-repeat center;
+    width: 19px;
+    height: 25px;
+}
+
+.accordion dl {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.accordion dt {
+    display: flex;
+}
+
+.accordion dd,
+.accordion__panel {
+    background-color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.accordion p {
+    padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+    position: relative;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+}
+
+.accordionTitle,
+.accordion__Heading {
+    background-color: #ffffff;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+    color: #F9856E;
+}
+
+
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+}
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+    max-height: 50em;
+    transition: max-height 0.5s;
+}
+
+@media screen and (min-width: 48em) {
+    .accordionItem {
+        max-height: 15em;
+        transition: max-height 0.5s;
+    }
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+    max-height: auto;
+}
+
+.animateIn {
+    -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+    -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+        transform-origin: 50% 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .accordionTitle, .accordion__Heading {
+        font-size: 14px;
+    }
+
+    .left-block-menu__tab-content {
+        font-size: 14px;
+    }
+}
+
+.vputevoditel-resorts__housing-item img {
+    padding: 0 !important;
+}
+
+.internal-vputevoditel-page__housing-list {
+    margin-bottom: 35px !important;
+}
+
+.internal-vputevoditel-page__border-top {
+    border-top: 1px solid rgba(112, 112, 112, .1);
+}
+
+.internal-vputevoditel-page__articles {
+    overflow: hidden;
+}
+
+.vputevoditel-medicine__block a {
+    text-decoration: none !important;
+}
+
+.internal-vputevoditel-page__articles .vputevoditel-medicine__block {
+    margin-top: 0;
+}
+
+.internal-vputevoditel-page__articles .vputevoditel-information-card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.internal-vputevoditel-page__housing h3,
+.internal-vputevoditel-page__articles h3 {
+    margin-bottom: 10px;
+}
+
+.internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item {
+    min-width: 184px;
+}
+
+.internal-vputevoditel-page__menu-list h3 {
+    margin-bottom: 40px;
+}
+
+.internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item:nth-child(1):after,
+.internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item:nth-child(2):after,
+.internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item:nth-child(3):after,
+.internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item:nth-child(4):after {
+    display: none;
+}
+
+.internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item span {
+    font-size: 16px;
+}
+
+.vputevoditel-navigation__container-item a {
+    text-decoration: none !important;
+}
+
+.internal-vputevoditel-page__housing-list .slick-prev {
+    left: 12px;
+    z-index: 1;
+}
+
+.internal-vputevoditel-page__housing-list .slick-next {
+    right: 12px;
+    z-index: 1;
+}
+
+@media (min-width: 1200px) {
+    .internal-vputevoditel-page__articles .vputevoditel-information-card {
+        height: 200px;
+    }
+}
+
+@media (max-width: 667.89px) {
+    .internal-vputevoditel-page__housing {
+        margin-bottom: 0;
     }
 }
