@@ -1319,6 +1319,14 @@ body {
 }
 
 @media screen and (max-width: 991.98px) {
+    .homeHeadBlock.selection .header-section-title .header-section-title__first-text {
+        text-align: center;
+    }
+
+    .header-section-title a {
+        margin-top: 30px;
+    }
+
     .header-section-title {
         flex-wrap: wrap;
         justify-content: center;
@@ -1533,7 +1541,7 @@ body {
 }
 
 .left-block-menu__container {
-    box-shadow: 1px 10px 54px -7px #888888;
+    box-shadow: 0 10px 20px 0 rgba(121, 119, 119, 0.29);
     height: 100%;
     background: #ffffff;
     border-top-right-radius: 5px;
