@@ -628,8 +628,8 @@ body {
 .vputevoditel-viza__country-block-russia {
     background: url("img/russia-vputevod@2x.png") no-repeat center;
     background-size: 100% auto;
-    width: 137px;
-    height: 95px;
+    width: 150px;
+    height: 105px;
     display: block;
     border-radius: 5px;
  }
@@ -637,8 +637,8 @@ body {
 .vputevoditel-viza__country-block-ukraine {
     background: url("img/ukraine-vputevod@2x.png") no-repeat center;
     background-size: 100% auto;
-    width: 137px;
-    height: 95px;
+    width: 150px;
+    height: 105px;
     display: block;
     border-radius: 5px;
 }
@@ -646,8 +646,8 @@ body {
 .vputevoditel-viza__country-block-belorussia {
     background: url("img/bellorus-vputevod@2x.png") no-repeat center;
     background-size: 100% auto;
-    width: 137px;
-    height: 95px;
+    width: 150px;
+    height: 105px;
     display: block;
     border-radius: 5px;
 }
@@ -655,8 +655,8 @@ body {
 .vputevoditel-viza__country-block-european {
     background: url("img/euro-vputevod@2x.png") no-repeat center;
     background-size: 100% auto;
-    width: 137px;
-    height: 95px;
+    width: 150px;
+    height: 105px;
     display: block;
     border-radius: 5px;
 }
@@ -664,17 +664,18 @@ body {
 .vputevoditel-viza__country-block-america {
     background: url("img/usa-vputevod@2x.png") no-repeat center;
     background-size: 100% auto;
-    width: 137px;
-    height: 95px;
+    width: 150px;
+    height: 105px;
     display: block;
     border-radius: 5px;
 }
 
 .vputevoditel-viza__country-block-canada {
-    background: url("img/canada-vputevod.png") no-repeat center;
+    background: url("img/canada-vputevod.png") no-repeat;
+    background-position-x: 6px;
     background-size: 100% auto;
-    width: 137px;
-    height: 95px;
+    width: 150px;
+    height: 105px;
     display: block;
     border-radius: 5px;
 }
@@ -916,6 +917,8 @@ body {
 .vputevoditel-notes__section-another-info {
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+    position: relative;
 }
 
 .vputevoditel-notes__section-another-info {
@@ -931,7 +934,6 @@ body {
 .vputevoditel-attractions__paragraph,
 .vputevoditel-notes__paragraph {
     font-size: 18px;
-    color: #CECDCD;
     line-height: 24px;
     margin-bottom: 30px;
     margin-left: 35px;
@@ -940,7 +942,11 @@ body {
     align-items: center;
 }
 
-.vputevoditel-notes__paragraph {
+.vputevoditel-attractions__paragraph a {
+    color: #cecdcd;
+}
+
+.vputevoditel-notes__paragraph a {
     color: #1FA1AF;
 }
 
