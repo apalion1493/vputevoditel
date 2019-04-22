@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="68" viewBox="0 0 53 68">
+  <g id="n22" transform="translate(-477 -2614)">
+    <g id="Rectangle_145" data-name="Rectangle 145" transform="translate(477 2614)" fill="#fff" stroke="#1fa1af" stroke-width="2">
+      <rect width="53" height="68" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="51" height="66" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_146" data-name="Rectangle 146" transform="translate(477 2663)" fill="#1fa1af" stroke="#1fa1af" stroke-width="2">
+      <rect width="53" height="19" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="51" height="17" rx="2" fill="none"/>
+    </g>
+    <text id="_22" data-name="№22" transform="translate(504 2656)" fill="#555" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-21.182" y="0">№22</tspan></text>
+    <text id="Маршрут_" data-name="Маршрут " transform="translate(505 2675)" fill="#fff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-22.751" y="0">Маршрут </tspan></text>
+    <path id="bus" d="M28.434,5.157,26.958,1.9A3.267,3.267,0,0,0,24,0H2.832A2.834,2.834,0,0,0,0,2.832V9.908A1.554,1.554,0,0,0,1.552,11.46H3.868a2.387,2.387,0,0,0,4.679,0H20.1a2.387,2.387,0,0,0,4.679,0h2.54a1.329,1.329,0,0,0,1.327-1.327V6.145A2.378,2.378,0,0,0,28.434,5.157ZM27.4,5.188l-4.48-.375V2.808l3.219-.4ZM6.207,12.414A1.432,1.432,0,1,1,7.64,10.982,1.433,1.433,0,0,1,6.207,12.414Zm16.234,0a1.432,1.432,0,1,1,1.432-1.432A1.433,1.433,0,0,1,22.442,12.414Zm4.88-1.91h-2.54a2.387,2.387,0,0,0-4.679,0H8.547a2.387,2.387,0,0,0-4.679,0H1.552a.6.6,0,0,1-.6-.6V2.832A1.878,1.878,0,0,1,2.832.955H24a2.3,2.3,0,0,1,1.509.568l-3.1.387H3.82a.478.478,0,0,0-.477.477V5.252a.478.478,0,0,0,.477.477h18.6l5.272.439v3.963A.373.373,0,0,1,27.321,10.5ZM4.3,4.775V2.865H7.64v1.91Zm4.3-1.91h3.82v1.91H8.595Zm4.775,0h3.342v1.91H13.369Zm4.3,0h4.3v1.91h-4.3Zm0,0" transform="translate(489 2621)" fill="#1fa1af"/>
+  </g>
+</svg>

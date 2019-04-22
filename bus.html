@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Общие условия сайта</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Аренда апартаментов в Болгарии">
+    <meta property="og:locale" content="ru_RU">
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,900&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript">
+        var currentLang      = "ru";
+        const API_SERVER     = "https://api.vput.eu/";
+        const LANG           = "ru";
+        const API_USER_TOKEN = "";
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="my-style.css">
+</head>
+<body class="article">
+
+<div class="regBlocks" style="display: none;">
+    <div class="enterBlock">
+
+        <div class="blockOne reg">
+            <div class="closeB"></div>
+            <h2>Новый аккаунт</h2>
+            <span class="enterSocial">Зарегистрируйтесь через</span>
+            <div class="socialButtonCenter">
+                <a href="#" class="facebookLinkAuthBlock">
+                    <span class="socialButon"><img src="/images/authorization/fb.svg" alt="" class="facebookAuthLink"></span>
+                </a>
+                <a href="https://oauth.vk.com/authorize?client_id=5003692&scope=offline%2Cnotify%2Cemail&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FvkAuth%2F&response_type=code&v=5.5">
+                    <span class="socialButon"><img src="/images/authorization/vk.svg" alt=""></span>
+                </a>
+                <a href="http://www.odnoklassniki.ru/oauth/authorize?client_id=1146889984&scope=VALUABLE_ACCESS%3BGET_EMAIL&response_type=code&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FodkAuth%2F">
+                    <span class="socialButon"><img src="/images/authorization/ok.svg" alt=""></span>
+                </a>
+            </div>            <span class="enterSocial two">Или </span>
+            <form class="registrationFormInContent" action="/clients/ajaxAdd/" method="post" data-post="&amp;authorization_client_submit=1">
+                <input name="login" type="email" placeholder="Адрес эл. почты" class="inputAu">
+                <input name="password" type="password" placeholder="Создать пароль" class="inputAu">
+                <div class="checkboxCenter">
+                    <input id="subscribe" name="newsSubscribed" type="checkbox" class="c1" checked>
+                    <label for="subscribe" class="sl">
+                        - Подписаться на спец. предложения
+                    </label>
+                </div>
+                <button class="enterInSite B registrationFormInContentSubmit">Регистрация</button>
+            </form>
+
+            <div class="otherWindow">Войти</div>
+        </div>
+
+        <div class="blockOne auth">
+            <div class="closeB"></div>
+            <h2>Вход</h2>
+            <span class="enterSocial">Войти через </span>
+            <div class="socialButtonCenter">
+                <a href="#" class="facebookLinkAuthBlock">
+                    <span class="socialButon"><img src="/images/authorization/fb.svg" alt="" class="facebookAuthLink"></span>
+                </a>
+                <a href="https://oauth.vk.com/authorize?client_id=5003692&scope=offline%2Cnotify%2Cemail&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FvkAuth%2F&response_type=code&v=5.5">
+                    <span class="socialButon"><img src="/images/authorization/vk.svg" alt=""></span>
+                </a>
+                <a href="http://www.odnoklassniki.ru/oauth/authorize?client_id=1146889984&scope=VALUABLE_ACCESS%3BGET_EMAIL&response_type=code&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FodkAuth%2F">
+                    <span class="socialButon"><img src="/images/authorization/ok.svg" alt=""></span>
+                </a>
+            </div>            <span class="enterSocial two">Или </span>
+            <form class="authorizationFormInContent" action="/authorization/ajaxAuthorization/" method="post" data-post="&amp;authorization_client_submit=1">
+                <input name="login" type="email" placeholder="Адрес эл. почты" class="inputAu">
+                <input name="password" type="password" placeholder="Пароль" class="inputAu">
+                <div class="checkboxCenter">
+                    <a href="/recovery/">Забыл пароль</a>
+                    <input name="cookie" id="remember" type="checkbox" class="c1">
+                    <label for="remember" class="sl">
+                        - Запомнить меня
+                    </label>
+                </div>
+                <div class="clrear"></div>
+                <button class="enterInSite B authorizationFormInContentSubmit">Войти</button>
+            </form>
+            <div class="otherWindow">Регистрация</div>
+        </div>
+
+    </div>
+    <div class="grayFon"></div>
+</div>
+
+<link rel='stylesheet' type='text/css' href='css/dist/adaptive.min.css'>
+
+<script type='text/javascript' src='js/dist/main.min.js'></script>
+
+<div class="topLine">
+    <div class="topLineCenter">
+        <span class="activeMobMenu">
+    <img src="/images/index/19.04.2016/menuIcon.svg" alt="" class="openImg">
+    <img src="/images/index/19.04.2016/close.svg" alt="" class="closeImg">
+    </span>
+        <div class="litleMenu">
+            <div class="cabinet">
+                <a href="/add/" class="toRent little">Сдать в аренду</a>
+                <a href="/contacts/" class="contacts">Контакты</a>
+
+                <div class="cabinetMenuMini">
+                    <a class="authReg" data-showBlock="auth">Вход</a>
+                    <a class="authReg" data-showBlock="reg">Регистрация</a>
+                </div>
+                <div class="currencyAndLang">
+                    <!--<noindex>-->
+                    <select class="language" name="lang">
+                        <option value="ru" selected>Рус</option>
+                        <option value="en" >Eng</option>
+                        <option value="ua" >Укр</option>
+                    </select>
+                    <!--</noindex>-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <a href="/add/" class="toRent">Сдать в аренду</a>
+
+        <div class="cabinet">
+            <div class="unauthorizated">
+                <div class="topMenu">
+
+                    <a class="authReg" data-showBlock="auth">Вход</a>
+                    <a class="authReg" data-showBlock="reg">Регистрация</a>
+                </div>
+            </div>
+        </div>
+        <!--<noindex>-->
+        <select class="language" name="lang">
+            <option value="ru" selected>Рус</option>
+            <option value="en" >Eng</option>
+            <option value="ua" >Укр</option>
+        </select>
+        <!--</noindex>-->
+        <a href="/" class="logo">
+            <img src="/images/articles/services/logo.svg" alt="">
+        </a>
+
+        <a href="/contacts/" class="contacts">Контакты</a>
+
+        <div class="clear"></div>
+    </div>
+</div><!-- Article styles -->
+
+<link rel='stylesheet' type='text/css' href='css/dist/articlePage.min.css'>
+
+
+<div class="clear"></div>
+
+<div class="left-block-menu">
+    <div class="left-block-menu__container">
+        <div class="accordion">
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-resorts"></i>
+                    </div>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Курорты</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-medicine"></i>
+                    </div>
+                    <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">Медицина</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-nutrition"></i>
+                    </div>
+                    <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Питание</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-transport"></i>
+                    </div>
+                    <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">Транспорт</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-visas"></i>
+                    </div>
+                    <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">Визы</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-getting-there"></i>
+                    </div>
+                    <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">Как добраться</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-water-parks"></i>
+                    </div>
+                    <a href="#accordion7" aria-expanded="false" aria-controls="accordion7" class="accordion-title accordionTitle js-accordionTrigger">Аквапарки</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-sights"></i>
+                    </div>
+                    <a href="#accordion8" aria-expanded="false" aria-controls="accordion8" class="accordion-title accordionTitle js-accordionTrigger">Достопримечательности</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-tours"></i>
+                    </div>
+                    <a href="#accordion9" aria-expanded="false" aria-controls="accordion9" class="accordion-title accordionTitle js-accordionTrigger">Экскурсии</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <div class="left-block-menu__section-icon">
+                        <i class="left-block-menu__icon-useful-know"></i>
+                    </div>
+                    <a href="#accordion10" aria-expanded="false" aria-controls="accordion10" class="accordion-title accordionTitle js-accordionTrigger">Полезно знать</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion10" aria-hidden="true">
+                    <div class="left-block-menu__tab-content">
+                        <a href="">Отдых в Болгарии летом</a>
+                        <a href="">Отдых в Болгарии летом</a>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="left-block-menu__hollow-block"></div>
+</div>
+
+<div class="main article_page internal-vputevoditel-page taxi-vputevoditel-page shuttle-buses">
+    <div class="internal-vputevoditel-page__other">
+        <div class="internal-vputevoditel-page__other-block">
+            <a class="internal-vputevoditel-page__other-btn" href="javascript: void(0);"></a>
+        </div>
+        <span class="internal-vputevoditel-page__other-btn-span">Другие полезные статьи</span>
+    </div>
+
+    <div class="internal-vputevoditel-page__main  shuttle-buses__main">
+        <h1>Рейсовые автобусы на курортах Болгарии</h1>
+        <p class="shuttle-buses__main-text">Рейсовые автобусы на курортах Болгарии – это дешевый и надежный способ передвижения. Автобусное
+            сообщение хорошо налажено, поэтому перемещаться вы можете не только в пределах одного города, но и ездить
+            в соседние города и даже в села. А в пределах Солнечного берега и Поморья вы можете передвигаться также на
+            туристическом паровозике.</p>
+        <div class="shuttle-buses__main-advantages">
+            <h2 class="shuttle-buses__main-advantages__h2">Преимущества поездок на автобусах</h2>
+            <div class="shuttle-buses__main-advantages-container">
+                <div class="shuttle-buses__main-advantages-block">
+                    <div class="shuttle-buses__main-advantages-block-icon">
+                        <i class="shuttle-buses__main-advantages-block-icon-cheap"></i>
+                    </div>
+                    <div class="shuttle-buses__main-advantages-block-content">
+                        <span class="shuttle-buses__main-advantages-block-title shuttle-buses__main-text">Дешево</span>
+                        <p class="shuttle-buses__main-text">Автобусы в Болгарии в разы дешевле чем такси и другой транспорт</p>
+                    </div>
+                </div>
+
+                <div class="shuttle-buses__main-advantages-block">
+                    <div class="shuttle-buses__main-advantages-block-icon">
+                        <i class="shuttle-buses__main-advantages-block-icon-price"></i>
+                    </div>
+                    <div class="shuttle-buses__main-advantages-block-content">
+                        <span class="shuttle-buses__main-advantages-block-title shuttle-buses__main-text">Фиксированная цена</span>
+                        <p class="shuttle-buses__main-text">Вы четко понимаете, сколько придется заплатить за транспорт.</p>
+                    </div>
+                </div>
+
+                <div class="shuttle-buses__main-advantages-block">
+                    <div class="shuttle-buses__main-advantages-block-icon">
+                        <i class="shuttle-buses__main-advantages-block-icon-benefit"></i>
+                    </div>
+                    <div class="shuttle-buses__main-advantages-block-content">
+                        <span class="shuttle-buses__main-advantages-block-title shuttle-buses__main-text">Выгодно, когда вдвоем</span>
+                        <p class="shuttle-buses__main-text">Если вы один или вдвоем, вам не выгодно вызвать такси;</p>
+                    </div>
+                </div>
+
+                <div class="shuttle-buses__main-advantages-block">
+                    <div class="shuttle-buses__main-advantages-block-icon">
+                        <i class="shuttle-buses__main-advantages-block-icon-info"></i>
+                    </div>
+                    <div class="shuttle-buses__main-advantages-block-content">
+                        <span class="shuttle-buses__main-advantages-block-title shuttle-buses__main-text">Есть информация онлайн</span>
+                        <p class="shuttle-buses__main-text">Есть сайты автовокзалов, на которых вы можете посмотреть расписание.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Цена общественного транспорта на Солнечном берегу и Несебре</h2>
+        <div class="shuttle-buses__main-advantages-border shuttle-buses__main-advantages-border-blue">
+            <div class="shuttle-buses__main-advantages-border-icon-block">
+                <i class="shuttle-buses__main-advantages-border-icon-info"></i>
+            </div>
+            <p class="shuttle-buses__main-text">Цены на транспорт для Солнечного берега и Несбра одинаковы</p>
+        </div>
+
+        <span class="shuttle-buses__main-text"><b>По Солнечному берегу или Несебру удобно ехать на городском автобусе №1 или №2.</b></span>
+
+        <div class="shuttle-buses__main-first-section">
+            <div class="shuttle-buses__main-first-section-block">
+                <div class="shuttle-buses__main-first-section-block-img">
+                    <i class="shuttle-buses__main-first-section-icon shuttle-buses__main-first-section-icon-n1"></i>
+                </div>
+                <div class="shuttle-buses__main-first-section-block-text">
+                    <p>От остановки Емона Солнечного берега до центра Старого Несебра - <b class="shuttle-buses__main-color-text">1,3 лв*</b></p>
+                </div>
+            </div>
+
+            <div class="shuttle-buses__main-first-section-block">
+                <div class="shuttle-buses__main-first-section-block-img">
+                    <i class="shuttle-buses__main-first-section-icon shuttle-buses__main-first-section-icon-n2"></i>
+                </div>
+                <div class="shuttle-buses__main-first-section-block-text">
+                    <p>От аквапарка Солнечного берега до Несебра - <b class="shuttle-buses__main-color-text">1,3 лв*</b></p>
+                </div>
+            </div>
+        </div>
+
+        <span class="shuttle-buses__main-color-text shuttle-buses__main-color-text-marginBottom">*Стоимость у маршрута №1 и 2 не меняется от того, на какой остановке сесть и сколько проехать.</span>
+
+        <div class="shuttle-buses__main-line"></div>
+
+        <section class="shuttle-buses__main-destination">
+            <p class="shuttle-buses__main-destination-title">
+                <span class="shuttle-buses__main-destination-sun"></span>
+                Работает только летом
+            </p>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-first">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n3"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">1,3 лв </span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">1,8 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">1,3 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-6">Равда</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Солнечный берег - Равда <span>&#8211; 1,8 лв</span></p>
+                    <p>Солнечный берег - Несебр <span>&#8211; 1,3 лв </span></p>
+                    <p>Несебр - Равда <span>&#8211; 1,3 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-second">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n4"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">2 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">1,2 лв <span>(после автовокзала)</span></span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Кошарица</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Несебр - Кошарица <span>&#8211; 2 лв</span></p>
+                    <p>Солнечный берег - Кошарица <span>&#8211; 1,2 лв</span> <span class="shuttle-buses__main-destination-contentMobil-additionally">(после автовокзала)</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-three">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n5"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">2 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">1,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Святой Влас</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Несебр - Святой Влас <span>&#8211; 2 лв</span></p>
+                    <p>Солнечный берег - Святой Влас <span>&#8211; 1,5 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-fourth">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n6"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">3 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">Гюльовца</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Несебр - Гюльовца <span>&#8211; 3 лв</span></p>
+                    <p>Солнечный берег - Гюльовца <span>&#8211; 3 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-five">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n7"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">1,3 лв </span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">1,8 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Равда</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-6">2,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-7">Ахелой</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Солнечный берег - Ахелой <span>&#8211; 2 лв</span></p>
+                    <p>Солнечный берег - Равда <span>&#8211; 1,8 лв</span></p>
+                    <p>Солнечный берег - Несебр <span>&#8211; 1,3 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <p class="shuttle-buses__main-destination-title">
+                <span class="shuttle-buses__main-destination-sun"></span>
+                Работает только летом
+            </p>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-six">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n8"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">4 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">4 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Святой Влас</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-6">2,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-7">Елените</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Несебр - Елените <span>&#8211; 4 лв</span></p>
+                    <p>Солнечный берег - Елените <span>&#8211; 4 лв</span></p>
+                    <p>Святой Влас - Елените <span>&#8211; 2,5 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-seven">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n10"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">1,2 лв </span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">2 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Равда</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-6">2,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-7">Ахелой</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-8">3,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-9">Поморье</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-10">5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-11">Бургас Аэропорт</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-12">6 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-13">Бургас</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Солнечный берег - Несебр <span>&#8211; 1,2 лв</span></p>
+                    <p>Солнечный берег - Равда <span>&#8211; 2 лв</span></p>
+                    <p>Солнечный берег - Ахелой <span>&#8211; 2,5 лв</span></p>
+                    <p>Солнечный берег - Поморье <span>&#8211; 3,5 лв</span></p>
+                    <p>Солнечный берег - Бургас Аэропорт <span>&#8211; 5 лв</span></p>
+                    <p>Солнечный берег - Бургас <span>&#8211; 6 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-eight">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n11"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">2 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Равда</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-6">2,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-7">Ахелой</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-8">3,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-9">Поморье</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-10">5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-11">Бургас Аэропорт</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-12">6 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-13">Бургас</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Несебр - Равда <span>&#8211; 2 лв</span></p>
+                    <p>Несебр - Ахелой <span>&#8211; 2,5 лв</span></p>
+                    <p>Несебр - Поморье <span>&#8211; 3,5 лв</span></p>
+                    <p>Несебр - Бургас Аэропорт <span>&#8211; 5 лв</span></p>
+                    <p>Несебр - Бургас <span>&#8211; 6 лв</span></p>
+                </div>
+            </div>
+            <div class="shuttle-buses__main-line"></div>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-nine">
+                <div class="shuttle-buses__main-destination-img">
+                    <i class="shuttle-buses__main-destination-img-n22"></i>
+                </div>
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Солнечный берег</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-2">(через Каблешково)</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">6 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">Бургас</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Солнечный Берег - Бургас <span>&#8211; 6 лв</span> <span class="shuttle-buses__main-destination-contentMobil-additionally">(через Каблешково)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="shuttle-buses__main-advantages-border shuttle-buses__main-advantages-border-orange">
+            <h3>Информация о льготах</h3>
+            <div class="shuttle-buses__main-advantages-border-orange-content">
+                <div class="shuttle-buses__main-advantages-border-orange-contentBlock">
+                    <div class="shuttle-buses__main-advantages-border-orange-contentBlock-img">
+                        <i class="icon-child"></i>
+                    </div>
+                    <p class="shuttle-buses__main-advantages-border-orange-contentBlock-text">
+                        <span>Дети до 7 лет бесплатно</span> при наличии свидетельства о рождении или паспорта ребенка.
+                    </p>
+                </div>
+
+                <div class="shuttle-buses__main-advantages-border-orange-contentBlock">
+                    <div class="shuttle-buses__main-advantages-border-orange-contentBlock-img">
+                        <i class="icon-girl"></i>
+                    </div>
+                    <p class="shuttle-buses__main-advantages-border-orange-contentBlock-text">
+                        <span>Дети от 7 лет</span> 1 дня до возраста 9 лет и 364 дня – <span>скидка 50%</span> на внешнегородских линиях, например, № 10, 11, 22.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Дополнительные летние рейсы из Солнечного Берега </h2>
+        <p class="shuttle-buses__main-text shuttle-buses__main-additionalFlights-text">Летом из Солнечного берега ходит дополнительный автобус до Елените, Варны, Пловдива, Софии, Казанлыка. </p>
+        <div class="shuttle-buses__main-additionalFlights">
+            <div class="shuttle-buses__main-additionalFlights-block">
+                <ul>
+                    <li><b>Созополь</b> – <span>12 лв</span>, в 9:00 туда, в 16:00 обратно</li>
+                    <li><b>Пловдив</b> – <span>23 лв</span></li>
+                    <li><b>София</b> – <span>33 лв</span></li>
+                </ul>
+            </div>
+
+            <div class="shuttle-buses__main-additionalFlights-block">
+                <ul>
+                    <li><b>Варна</b> – <span>12 лв</span>, в 9:00 туда, в 16:00 обратно</li>
+                    <li><b>Казанлык</b> – <span>20 лв</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Фото автовокзала</h2>
+        <div class="shuttle-buses__main-photo">
+            <figure class="shuttle-buses__main-photo-block">
+                <img src="img/bus-page/_MG_1618@2x.png" alt="">
+                <figcaption>Автовокзал Солнечный берег</figcaption>
+            </figure>
+
+            <figure class="shuttle-buses__main-photo-block">
+                <img src="img/bus-page/_MG_1611@2x.png" alt="">
+                <figcaption>Зал ожидания на автовокзале Солнечный берег</figcaption>
+            </figure>
+
+            <figure class="shuttle-buses__main-photo-block">
+                <img src="img/bus-page/_MG_1614@2x.png" alt="">
+                <figcaption>На остановках есть карта маршрутов и расписание</figcaption>
+            </figure>
+
+            <figure class="shuttle-buses__main-photo-block">
+                <img src="img/bus-page/_MG_1615@2x.png" alt="">
+                <figcaption>Карта маршрутов Несебр</figcaption>
+            </figure>
+
+            <figure class="shuttle-buses__main-photo-block">
+                <img src="img/bus-page/_MG_1612@2x.png" alt="">
+                <figcaption>Информационные таблички на остановках</figcaption>
+            </figure>
+
+            <figure class="shuttle-buses__main-photo-block">
+                <img src="img/bus-page/_MG_1608@2x.png" alt="">
+                <figcaption>Информационные таблички на остановках</figcaption>
+            </figure>
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Цены на автобусы Святой Влас</h2>
+        <div class="shuttle-buses__main-priceVlas">
+            <ul class="shuttle-buses__main-list-namePrice">
+                <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeFirst">По городу Святому Власу или в Солнечный берег</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">1,50 лв</p></li>
+                <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeFirst">Святой Влас - Несебр</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">2,00 лв</p></li>
+                <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeFirst">Святого Власа - Елените</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">2,50 лв</p></li>
+            </ul>
+
+            <!--<ul class="shuttle-buses__main-list-price">-->
+                <!--<li><span>&#8211;</span> <p>1,50 лв</p></li>-->
+                <!--<li><span>&#8211;</span> <p>2,00 лв</p></li>-->
+                <!--<li><span>&#8211;</span> <p>2,50 лв</p></li>-->
+            <!--</ul>-->
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Цены автовокзала Варна</h2>
+        <div class="shuttle-buses__main-priceVarna">
+            <p>Эта информация полезна для тех, кто приезжает в Болгарию на автобусе или прилетает на самолете. Если
+                трансфера нет, то самым экономичным вариантом будет использование общественного транспорта.</p>
+
+
+            <div class="shuttle-buses__main-priceVarna-container">
+                <div class="shuttle-buses__main-priceVarna-block">
+                    <ul class="shuttle-buses__main-list-namePrice shuttle-buses__main-list-namePrice-varnaFirst">
+                        <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeSecond">Варна - Бяла</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">7,00 лв</p></li>
+                        <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeSecond">Варна - Обзор</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">8,0 лв</p></li>
+                        <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeSecond">Варна - Баня</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">9,00 лв</p></li>
+                    </ul>
+
+                    <!--<ul class="shuttle-buses__main-list-price">-->
+                        <!--<li><span>&#8211;</span> <p>7,00 лв</p></li>-->
+                        <!--<li><span>&#8211;</span> <p>8,0 лв</p></li>-->
+                        <!--<li><span>&#8211;</span> <p>9,00 лв</p></li>-->
+                    <!--</ul>-->
+                </div>
+
+                <div class="shuttle-buses__main-priceVarna-block">
+                    <ul class="shuttle-buses__main-list-namePrice shuttle-buses__main-list-namePrice-varnaSecond">
+                        <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeThree">Варна – Солнечный берег</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">12,00 лв</p></li>
+                        <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeThree">Варна - Поморие</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">13,00 лв</p></li>
+                        <li><p class="shuttle-buses__main-list-namePrice-route shuttle-buses__main-list-namePrice-routeThree">Варна – Бургас</p> <span>&#8211;</span> <p class="shuttle-buses__main-list-namePrice-price">17,00 лв</p></li>
+                    </ul>
+
+                    <!--<ul class="shuttle-buses__main-list-price">-->
+                        <!--<li><span>&#8211;</span> <p>12,00 лв</p></li>-->
+                        <!--<li><span>&#8211;</span> <p>13,00 лв</p></li>-->
+                        <!--<li><span>&#8211;</span> <p>17,00 лв</p></li>-->
+                    <!--</ul>-->
+                </div>
+            </div>
+
+            <p>Автовокзал  публикует информацию о времени рейсов и ценах на своем сайте: <a href="#">https://autogaravn.com.</a></p>
+
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Цены на автобусы Бургас</h2>
+        <div class="shuttle-buses__main-priceBurgas">
+            <p class="shuttle-buses__main-priceBurgas-firstText shuttle-buses__main-priceBurgas-text">Билет на автобус по городу Бургас стоит 1,5 лв. Если планируете ехать часто - лучше купить проездной. Чем больше поставить денег, тем дешевле будет поездка. Если купить 50 поездок, билет будет стоить 1,2 лв. В течение 40 минут после первого активирования билета, можно менять автобусы сколько хочешь. Это пригодиться, если вам нужно доехать в несколько мест за короткое время.</p>
+
+            <p class="shuttle-buses__main-priceBurgas-route">Маршрут № 10 из Бургаса </p>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-ten">
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Бургас</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">3-3,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-5">Поморье</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-6">4,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-7">Ахелой</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-8">4,5-5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-9">Равда</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-10">6 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-11">Несебр</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-12">6 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-13">Солнечный<br> берег</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Бургас - Поморье <span>&#8211; 3-3,5 лв</span></p>
+                    <p>Бургас - Ахелой <span>&#8211; 4,5 лв</span></p>
+                    <p>Бургас - Равда <span>&#8211; 4,5-5 лв</span></p>
+                    <p>Бургас - Несебр <span>&#8211; 6 лв</span></p>
+                    <p>Бургас - Солнечный берег <span>&#8211; 6 лв</span></p>
+                </div>
+            </div>
+
+            <p class="shuttle-buses__main-priceBurgas-route shuttle-buses__main-priceBurgas-routeIndent">Бургас-Созополь</p>
+            <div class="shuttle-buses__main-destination-container shuttle-buses__main-destination-container-eleven">
+                <div class="shuttle-buses__main-destination-content">
+                    <div class="shuttle-buses__main-destination-arrow"></div>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-1">Бургас</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-3">4,5 лв</span>
+                    <span class="shuttle-buses__main-destination-content-text shuttle-buses__main-destination-content-text-4">Созополь</span>
+                </div>
+                <div class="shuttle-buses__main-destination-contentMobil">
+                    <p>Бургас - Созополь <span>&#8211; 4,5 лв</span></p>
+                </div>
+            </div>
+
+            <p class="shuttle-buses__main-priceBurgas-text shuttle-buses__main-priceBurgas-secondText">Нет разницы, какой выбрать маршрут из Бургаса в Солнечный берег - №10 или №22. Если вам нужно выйти, например, в Сарафово, тогда следует выбрать маршрут № 10.</p>
+            <br>
+            <p class="shuttle-buses__main-priceBurgas-text"><b>Из автовокзала Бургас можно уехать и в более удаленные города.</b></p>
+
+            <div class="shuttle-buses__main-priceBurgas-deleted">
+                <div class="shuttle-buses__main-priceBurgas-deletedBlock">
+                    <span></span>
+                    <p class="shuttle-buses__main-priceBurgas-deletedBlock-title">Пловдив</p>
+                    <span>&#8211;</span>
+                    <p class="shuttle-buses__main-priceBurgas-deletedBlock-orange">17,00 лв</p>
+                </div>
+                <div class="shuttle-buses__main-priceBurgas-deletedBlock">
+                    <span></span>
+                    <p class="shuttle-buses__main-priceBurgas-deletedBlock-title">Варна</p>
+                    <span>&#8211;</span>
+                    <p class="shuttle-buses__main-priceBurgas-deletedBlock-orange">9,00 лв</p>
+                </div>
+                <div class="shuttle-buses__main-priceBurgas-deletedBlock">
+                    <span></span>
+                    <p class="shuttle-buses__main-priceBurgas-deletedBlock-title">Стара Загора</p>
+                    <span>&#8211;</span>
+                    <p class="shuttle-buses__main-priceBurgas-deletedBlock-orange">9,00 лв</p>
+                </div>
+            </div>
+
+            <div class="shuttle-buses__main-priceBurgas-container">
+                <figure class="">
+                    <img src="img/bus-page/MG_1284.png" alt="">
+                    <figcaption>Автовокзал Бургас</figcaption>
+                </figure>
+
+                <figure class="">
+                    <img src="img/bus-page/MG_1285.png" alt="">
+                    <figcaption>Автовокзал Бургас с обратной стороны</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+        <h2 class="shuttle-buses__main-advantages__h2">Памятка туриста</h2>
+        <p class="shuttle-buses__main-text"><b>О чем нужно помнить, передвигаясь на общественном транспорте:</b></p>
+
+        <div class="shuttle-buses__main-touristGuide">
+            <div class="shuttle-buses__main-touristGuide-block">
+                <div class="shuttle-buses__main-touristGuide-block-img">
+                    <span class="shuttle-buses__main-touristGuide-block-icon shuttle-buses__main-touristGuide-block-iconTicket"></span>
+                </div>
+                <p>Билет можно приобрести как на автовокзале, так и в автобусе.</p>
+            </div>
+
+            <div class="shuttle-buses__main-touristGuide-block">
+                <div class="shuttle-buses__main-touristGuide-block-img">
+                    <span class="shuttle-buses__main-touristGuide-block-icon shuttle-buses__main-touristGuide-block-iconArrows"></span>
+                </div>
+                <p>Цена поездки, например, в Поморье, может слегка отличаться от обратной поездки.</p>
+            </div>
+
+            <div class="shuttle-buses__main-touristGuide-block">
+                <div class="shuttle-buses__main-touristGuide-block-img">
+                    <span class="shuttle-buses__main-touristGuide-block-icon shuttle-buses__main-touristGuide-block-iconPeople"></span>
+                </div>
+                <p>Дети туристов обычно оплачивают билет в полном объеме. Дети до 7 лет, граждане Болгарии за билет не платят.</p>
+            </div>
+
+            <div class="shuttle-buses__main-touristGuide-block">
+                <div class="shuttle-buses__main-touristGuide-block-img">
+                    <span class="shuttle-buses__main-touristGuide-block-icon shuttle-buses__main-touristGuide-block-iconRoute"></span>
+                </div>
+                <p>На стоимость билета влияет дальность поездки. Но иногда билеты до городов, расположенных рядом могут стоить одинаково.</p>
+            </div>
+
+            <div class="shuttle-buses__main-touristGuide-block">
+                <div class="shuttle-buses__main-touristGuide-block-img">
+                    <span class="shuttle-buses__main-touristGuide-block-icon shuttle-buses__main-touristGuide-block-iconBusstop"></span>
+                </div>
+                <p>В некоторых городах нет автовокзала. Ждать автобус следует на остановке. Однако, рейсы разные, поэтому, автобусы проходят не через все остановки. Почти во всех крупных городах есть автовокзал, но очень часто здание неприметное и больше походит на небольшой магазин.</p>
+            </div>
+
+            <div class="shuttle-buses__main-touristGuide-block">
+                <div class="shuttle-buses__main-touristGuide-block-img">
+                    <span class="shuttle-buses__main-touristGuide-block-icon shuttle-buses__main-touristGuide-block-iconMap"></span>
+                </div>
+                <p>Как узнать, какие автобусы проезжают через остановку? На 90% остановок наклеена карта с маршрутами автобусов, которые через нее проезжают.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="internal-vputevoditel-page__housing  internal-vputevoditel-page__border-top">
+        <h3>Снимайте жилье в Болгарии недорого</h3>
+        <div class="internal-vputevoditel-page__housing-list">
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vputevoditel-resorts__housing-item internal-vputevoditel-page__housing-item">
+                <div id="inList-3189" class="offersBlock">
+                    <div class="imgOffersBlock" style="height: auto;">
+                        <div class="touchslider">
+                            <a href="/bulgaria/pomorie/3189/" target="_blank">
+                                <img class="transparent imgPreload" src="/cache/images/realties/483x315_focus/1.jpg_216.jpg" data-controls="true"> <!-- old size : 320x200 -->
+                            </a>
+                        </div>
+                        <div class="iconInfoBlock">
+                            <img src="/images/realties/objects/parameters_ico/242.svg" title="Кабельное ТВ" alt="">
+                        </div>
+                    </div>
+                    <a class="add-to-favorites toFavorites toFavoritesBlock" data-action="/realties/ajaxSetFavorite/" data-post="id=3189" data-method="post">
+
+                    </a>
+
+                    <div class="dataOffersBlock">
+                        <a href="/bulgaria/pomorie/3189/" class="linkTitleBlock" target="_blank">
+                            <span>Студия в Sunset Resort Family</span>
+                        </a>
+                        <span class="addressNameBlock">Болгария  |  Поморие</span>
+                        <span class="infoOffersBlock">Квартира |  Комнат: 1  |  Гостей: 4</span>
+
+                        <div class="priceOffersBlock">
+                            <div class="presentDayPriceBlock">
+                                <span>€</span>30                                    <strong>
+                                €8                                    </strong>
+
+                            </div>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="internal-vputevoditel-page__articles  internal-vputevoditel-page__border-top">
+        <h3>Другие интересные статьи</h3>
+        <div class="vputevoditel-medicine__block">
+            <a href="" class=" vputevoditel-information-card">
+                <div class=" vputevoditel-information-card__mud vputevoditel-information-card__image"></div>
+                <div class=" vputevoditel-information-card__text">
+                    <span>Целебные свойства грязи в Поморие</span>
+                </div>
+            </a>
+
+            <a href="" class="vputevoditel-information-card">
+                <div class="vputevoditel-information-card__doctor vputevoditel-information-card__image"></div>
+                <div class="vputevoditel-information-card__text">
+                    <span>Поездка в Болгарию на лечение</span>
+                </div>
+            </a>
+
+            <a href="" class="vputevoditel-information-card">
+                <div class="vputevoditel-information-card__spa vputevoditel-information-card__image"></div>
+                <div class="vputevoditel-information-card__text">
+                    <span>Бальнеологические и спа-курорты Болгарии</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer id="footer">
+    <div class="lineFooter">
+        <div class="lineFooterCenter">
+            <div class="textFooter">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
+            <form class="inputFooter subscriptionForm" action="/realties/subscribeClient/" data-post="&page=/user_agreement/">
+                <input class="subscribtionEmail" name="clientEmail" type="text" placeholder="Ваш email">
+                <button class="subscriptionFormSubmit">Подписаться</button>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="linckFooterCenter">
+        <ul>
+            <li>
+                <span>О нас</span>
+                <a href="/about/">Компания</a>
+                <a href="/trust/">Безопасность</a>
+            </li>
+            <li>
+                <span>Правила сайта</span>
+                <a href="/user_agreement/">Общие условия</a>
+                <a href="/booking_cancelation_rules/">Отмена бронирования</a>
+                <a href="/withdraw/">Вывод денег</a>
+            </li>
+            <li>
+                <span>Связаться</span>
+                <a href="/contacts/">Контакты</a>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <span class="socialSpan">Следите за нами</span>
+                <a target="_blank" href="http://ok.ru/group/53570038661351/" class="social"><img width="32" src="/images/articles/services/ok.svg" alt="Odnoklassniki"></a>
+                <a target="_blank" href="https://vk.com/vput_eu" class="social"><img width="32" src="/images/articles/services/vk.svg" alt="VK"></a>
+                <a target="_blank" href="https://www.facebook.com/groups/vput.eu/" class="social"><img width="32" src="/images/articles/services/fb.svg" alt="Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/v.p.u.t.bulgaria/" class="social"><img width="32" src="/images/articles/services/instagramm.svg" alt="Instagramm"></a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="end">
+            <img src="/images/articles/services/logo.svg" alt="">
+            <strong>Copyright © 2013 - 2018</strong>
+            <div class="line-white"></div>
+            <a href="http://webdelo.org/" class="webdelo-link">
+                <span class="wb-text">Developed by </span>
+                <span class="wb-image"><img src="/images/bg/logoW.svg" alt="" style="width: 70px; height: auto;"></span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script type='text/javascript' src='js/dist/main.min.js'></script>
+<script src="js/slick/slick/slick.min.js"></script>
+<script src="js/my-js.js"></script>
+</body>
+</html>

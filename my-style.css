@@ -1,9 +1,15 @@
 body, html {
     height: auto !important;
+    overflow-x: hidden;
 }
 
 body {
     position: relative;
+}
+
+.internal-vputevoditel-page__margin {
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .homeHeadBlock.selection.vputevoditel h1 {
@@ -1276,7 +1282,10 @@ body {
 }
 
 @media screen and (max-width: 1215px) {
-    .vputevoditel-navigation__container-item:nth-child(1):after, .vputevoditel-navigation__container-item:nth-child(2):after, .vputevoditel-navigation__container-item:nth-child(3):after, .vputevoditel-navigation__container-item:nth-child(4):after {
+    .vputevoditel-navigation__container-item:nth-child(1):after,
+    .vputevoditel-navigation__container-item:nth-child(2):after,
+    .vputevoditel-navigation__container-item:nth-child(3):after,
+    .vputevoditel-navigation__container-item:nth-child(4):after {
         display: none;
     }
 }
@@ -1470,6 +1479,9 @@ body {
 
 
 
+
+
+
 .internal-vputevoditel-page__other {
     display: flex;
     align-items: center;
@@ -1485,6 +1497,11 @@ body {
 
 .internal-vputevoditel-page__other-btn-span.color-orange {
     color: #F9856E;
+}
+
+.main.article_page.internal-vputevoditel-page .internal-vputevoditel-page__main p,
+.main.article_page.internal-vputevoditel-page .taxi-transfer__main p {
+    line-height: 24px;
 }
 
 .internal-vputevoditel-page .internal-vputevoditel-page__other-btn {
@@ -1940,5 +1957,2134 @@ body {
 @media (max-width: 667.89px) {
     .internal-vputevoditel-page__housing {
         margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+.taxi-vputevoditel-page .taxi-vputevoditel-page__h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.taxi-vputevoditel-page .taxi-vputevoditel-page__h1-first-title {
+    margin-bottom: 39px;
+}
+
+.taxi-vputevoditel-page .taxi-vputevoditel-page__text {
+    font-size: 18px;
+    color: #555555;
+}
+
+.main.taxi-vputevoditel-page .taxi-vputevoditel-page__h2 {
+    font-size: 32px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.main.taxi-vputevoditel-page .taxi-vputevoditel-page__h2-second-title {
+    margin-bottom: 17px;
+}
+
+.main.taxi-vputevoditel-page .taxi-vputevoditel-page__h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.main.taxi-vputevoditel-page .taxi-vputevoditel-page__h4-table-title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.taxi-vputevoditel-page__table {
+    border-collapse: collapse;
+}
+
+.taxi-vputevoditel-page__table th {
+    background: #1FA1AF;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.taxi-vputevoditel-page__table th:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.taxi-vputevoditel-page__table th:nth-child(2) {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main .taxi-vputevoditel-page__table tr td {
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-color: #BABABA;
+}
+
+.taxi-vputevoditel-page__table tr td {
+    font-size: 16px;
+    font-weight: bold;
+    color: #F9856E;
+}
+
+.taxi-vputevoditel-page__table tr td:first-child {
+    color: #555555;
+}
+
+.vputevoditel-media-container {
+    display: flex;
+    align-items: center;
+}
+
+.vputevoditel-media-container__currency-help {
+    border: 1px solid #F9856E;
+    padding: 21px 40px 21px 40px;
+    margin-top: 37px;
+    margin-bottom: 30px;
+}
+
+.vputevoditel-media-container__block-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 34px;
+}
+
+.vputevoditel-media-container__icon-shuffle {
+    background: url("img/taxi/vputevoditel-media-container__icon-shuffle.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 38px;
+    height: 41px;
+}
+
+.main .vputevoditel-media-container__text {
+    font-size: 18px;
+    color: #555555;
+    line-height: 26px;
+}
+
+.taxi-vputevoditel-page__taxi-fare {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 65px;
+}
+
+.taxi-vputevoditel-page__taxi-fare-day,
+.taxi-vputevoditel-page__taxi-fare-night {
+    display: flex;
+    align-items: center;
+}
+
+.taxi-vputevoditel-page__taxi-fare-icon-sun {
+    background: url("img/taxi/vputevoditel-sun.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 54px;
+    height: 54px;
+    display: block;
+    margin-top: 10px;
+    margin-right: 19px;
+}
+
+.taxi-vputevoditel-page__taxi-fare-icon-moon {
+    background: url("img/taxi/vputevoditel-moon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 46px;
+    height: 45px;
+    display: block;
+    margin-top: 10px;
+    margin-right: 17px;
+}
+
+.taxi-vputevoditel-page__taxi-fare-block-icon {
+    min-width: 55px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.taxi-vputevoditel-page__taxi-fare-content {
+    display: flex;
+    align-items: center;
+}
+
+.taxi-vputevoditel-page__taxi-km {
+    font-size: 90px;
+    color: #777777;
+    line-height: 26px;
+}
+
+.taxi-vputevoditel-page__taxi-text {
+    display: flex;
+    flex-direction: column;
+    color: #777777;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.taxi-vputevoditel-page__taxi-text span:first-child {
+    font-size: 52px;
+    line-height: 26px;
+}
+
+.taxi-vputevoditel-page__taxi-text span:last-child {
+    font-size: 31px;
+    line-height: 26px;
+    margin-top: 5px;
+}
+
+.taxi-vputevoditel-page__taxi-equally {
+    background: url("img/taxi/about.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 69px;
+    margin-left: 16px;
+    display: block;
+}
+
+.taxi-vputevoditel-page__taxi-total-price {
+    margin-top: 15px;
+    display: block;
+    margin-left: 8px;
+}
+
+.main .taxi-vputevoditel-page__taxi-total-price p {
+    font-size: 40px;
+    color: #F9856E;
+}
+
+.taxi-vputevoditel-page__section-jotting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.taxi-vputevoditel-page__section-jotting-block {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.taxi-vputevoditel-page__section-jotting-block-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    height: 55px;
+    margin-bottom: 33px;
+}
+
+.taxi-vputevoditel-page__section-jotting-icon-taxi {
+    background: url("img/taxi/vputevoditel-icon__taxi.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 61px;
+    height: 51px;
+    display: block;
+}
+
+.taxi-vputevoditel-page__section-jotting-icon-bus {
+    background: url("img/taxi/vputevoditel-icon__bus.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 77px;
+    height: 51px;
+    display: block;
+}
+
+.taxi-vputevoditel-page__section-jotting-icon-counter {
+    background: url("img/taxi/vputevoditel-icon__counter.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 67px;
+    height: 32px;
+    display: block;
+}
+
+.taxi-vputevoditel-page__section-jotting-icon-car {
+    background: url("img/taxi/vputevoditel-icon__car.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 76px;
+    height: 34px;
+    display: block;
+}
+
+.taxi-vputevoditel-page__section-jotting-icon-cabbie {
+    background: url("img/taxi/vputevoditel-icon__cabbie.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 35px;
+    height: 56px;
+    display: block;
+}
+
+.taxi-vputevoditel-page__section-jotting-icon-airport {
+    background: url("img/taxi/vputevoditel-icon__aircraft.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 69px;
+    height: 52px;
+    display: block;
+}
+
+.article_page .taxi-vputevoditel-page__section-jotting-block-content p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (max-width: 991.98px) {
+    .taxi-vputevoditel-page__section-jotting-block {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .taxi-vputevoditel-page__section-jotting-block {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .taxi-vputevoditel-page__taxi-fare {
+        flex-direction: column;
+    }
+
+    .taxi-vputevoditel-page__taxi-fare-day {
+        margin-bottom: 30px;
+    }
+
+    .taxi-vputevoditel-page__taxi-fare-night {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .taxi-vputevoditel-page__table th {
+        font-size: 14px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .taxi-vputevoditel-page__table th:nth-child(2) {
+        width: 86px;
+    }
+
+    .vputevoditel-media-container__currency-help {
+        border: 1px solid #F9856E;
+        padding: 21px 15px 21px 15px;
+        margin-top: 37px;
+        margin-bottom: 30px;
+    }
+
+    .main .vputevoditel-media-container__currency-help .vputevoditel-media-container__text {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .vputevoditel-media-container__block-icon {
+        margin-right: 15px;
+    }
+
+    .taxi-vputevoditel-page__taxi-text span:first-child {
+        font-size: 35px;
+        line-height: 26px;
+    }
+
+    .taxi-vputevoditel-page__taxi-text span:last-child {
+        font-size: 20px;
+        line-height: 26px;
+         margin-top: 0;
+    }
+
+    .taxi-vputevoditel-page__taxi-text {
+        margin-top: 0;
+    }
+
+    .taxi-vputevoditel-page__taxi-km {
+        font-size: 62px;
+        color: #777777;
+        line-height: 26px;
+    }
+
+    .taxi-vputevoditel-page__taxi-fare-icon-sun,
+    .taxi-vputevoditel-page__taxi-fare-icon-moon {
+        margin-right: 0;
+    }
+
+    .taxi-vputevoditel-page__taxi-total-price {
+        margin-top: 0;
+    }
+
+    .taxi-vputevoditel-page__taxi-equally {
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .taxi-vputevoditel-page .taxi-vputevoditel-page__text,
+    .article_page .taxi-vputevoditel-page__section-jotting-block-content p {
+        font-size: 16px;
+    }
+
+    .taxi-vputevoditel-page .taxi-vputevoditel-page__h1 {
+        font-size: 24px;
+    }
+
+    .main.taxi-vputevoditel-page .taxi-vputevoditel-page__h2 {
+        font-size: 22px;
+    }
+
+    .main.taxi-vputevoditel-page .taxi-vputevoditel-page__h4 {
+        font-size: 20px;
+    }
+
+    .taxi-vputevoditel-page .taxi-vputevoditel-page__h1-first-title {
+        margin-bottom: 20px;
+    }
+
+    .main.taxi-vputevoditel-page .taxi-vputevoditel-page__h2-second-title {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 424.98px) {
+    .vputevoditel-media-container__block-icon {
+        display: none;
+    }
+
+    .taxi-vputevoditel-page__table th {
+        font-size: 12px;
+    }
+
+    .main .taxi-vputevoditel-page__taxi-total-price p {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+/*taxi-transfer*/
+
+.article_page h1.taxi-transfer__main-h1 {
+    font-size: 36px;
+    color: #333333;
+}
+
+.taxi-transfer__main-firstBlock {
+    margin-top: 40px;
+    display: flex;
+}
+
+.taxi-transfer__main-firstBlock-text {
+    width: 70%;
+}
+
+.article_page .taxi-transfer__main-firstBlock-text p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.taxi-transfer__main-firstBlock-img {
+    position: relative;
+}
+
+.taxi-transfer__main-firstBlock-img-car {
+    background: url("img/taxi-transfer/car@2x.png") no-repeat center;
+    background-size: 100% auto;
+    width: 949px;
+    height: 492px;
+    display: block;
+    position: absolute;
+    top: -125px;
+    left: -20px;
+}
+
+th.taxi-vputevoditel-page__table-first {
+    width: 267px;
+}
+
+.taxi-vputevoditel-page__table-firstBlock th {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.taxi-vputevoditel-page__table-specialBlock th {
+    max-width: 118px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    background: rgba(31, 161, 175, 0.8);
+}
+
+.taxi-vputevoditel-page__table-specialBlock th:nth-child(2),
+.taxi-vputevoditel-page__table-specialBlock th:nth-child(4) {
+    border-right: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.taxi-vputevoditel-page__table-specialBlock th:nth-child(3),
+.taxi-vputevoditel-page__table-specialBlock th:nth-child(5) {
+    border-left: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.main.article_page.taxi-transfer .taxi-transfer__h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #555555;
+}
+
+.taxi-transfer__h3-burgas {
+    margin-bottom: 32px;
+}
+
+.taxi-transfer__table-borgas {
+    margin-bottom: 60px;
+}
+
+.taxi-transfer__h3-varna {
+    margin-bottom: 35px;
+}
+
+.taxi-transfer__container-table-varna {
+    display: flex;
+    margin-bottom: 47px;
+}
+
+.taxi-transfer__table tr td:first-child {
+    text-align: left;
+    padding-left: 37px;
+}
+
+.taxi-transfer__table-varna-first tr td:first-child,
+.taxi-transfer__table-varna-second tr td:first-child {
+    width: 50%;
+}
+
+.taxi-transfer__table-varna-first {
+    margin-right: 17px;
+}
+
+.main.article_page.taxi-transfer .taxi-transfer__h2 {
+    font-size: 32px;
+    color: #555555;
+}
+
+.taxi-transfer__h2-features {
+    margin-bottom: 11px;
+}
+
+.taxi-transfer__main-features {
+    margin-bottom: 84px;
+}
+
+.taxi-transfer .taxi-transfer__main-features p {
+    font-size: 18px;
+    color: #555555;
+}
+
+.taxi-transfer__main-features-ul {
+    margin-top: 19px;
+}
+
+.taxi-transfer .taxi-transfer__main-features-ul li {
+    list-style-type: none;
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.taxi-transfer .taxi-transfer__main-features-ul li:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 7.5px;
+    background: #1FA1AF;
+    min-width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.taxi-transfer__main-features-title {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .taxi-transfer__container-table-varna {
+        flex-direction: column;
+    }
+
+    .taxi-transfer__table-varna-first {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .taxi-transfer__main-firstBlock-img {
+        display: none;
+    }
+
+    .taxi-transfer__main-firstBlock-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .taxi-transfer__table tr td:first-child {
+        padding-left: 10px;
+    }
+
+    .taxi-transfer__table-mobil-scroll {
+        overflow-x: scroll;
+    }
+
+    .article_page h1.taxi-transfer__main-h1 {
+        font-size: 23px;
+    }
+
+    .main.article_page.taxi-transfer .taxi-transfer__h3 {
+        font-size: 18px;
+    }
+
+    .main.article_page.taxi-transfer .taxi-transfer__h2 {
+        font-size: 20px;
+    }
+
+    .article_page .taxi-transfer__main-firstBlock-text p,
+    .taxi-transfer .taxi-transfer__main-features p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .main.article_page.internal-vputevoditel-page .internal-vputevoditel-page__main p,
+    .main.article_page.internal-vputevoditel-page .taxi-transfer__main p {
+        line-height: 22px;
+    }
+}
+
+
+
+
+
+
+
+/*bus*/
+
+.article_page.shuttle-buses h1 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 38px;
+}
+
+.shuttle-buses .shuttle-buses__main-text {
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses .shuttle-buses__main-text b {
+    color: #555555;
+}
+
+.article_page.shuttle-buses p {
+    color: #555555;
+}
+
+.shuttle-buses__main-advantages-block {
+    display: flex;
+    width: 47%;
+    margin-top: 40px;
+}
+
+.shuttle-buses__main-advantages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 37px;
+}
+
+.shuttle-buses__main-advantages-block-icon {
+    min-width: 65px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.shuttle-buses__main-advantages-block-icon-cheap {
+    background: url("img/bus-page/shuttle-buses__main-advantages-block-icon-cheap.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 60px;
+    height: 48px;
+    display: block;
+}
+
+.shuttle-buses__main-advantages-block-icon-price {
+    background: url("img/bus-page/shuttle-buses__main-advantages-block-icon-price.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 60px;
+    height: 52px;
+    display: block;
+}
+
+.shuttle-buses__main-advantages-block-icon-benefit {
+    background: url("img/bus-page/shuttle-buses__main-advantages-block-icon-benefit.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 60px;
+    height: 48px;
+    display: block;
+}
+
+.shuttle-buses__main-advantages-block-icon-info {
+    background: url("img/bus-page/shuttle-buses__main-advantages-block-icon-info.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 47px;
+    display: block;
+}
+
+.shuttle-buses__main-advantages-block-title {
+    font-weight: bold;
+    color: #555555;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.shuttle-buses__main-advantages-block-content p {
+    text-align: left !important;
+}
+
+.main.article_page .shuttle-buses__main-advantages__h2 {
+    text-align: center;
+    color: #555555 !important;
+    font-size: 24px;
+}
+
+.shuttle-buses__main-advantages-border {
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.article_page  .shuttle-buses__main-advantages-border p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.shuttle-buses__main-advantages-border-blue {
+    border-color: #1FA1AF;
+    padding: 16px 27px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.shuttle-buses__main-advantages-border-icon-block {
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 23px;
+}
+
+.shuttle-buses__main-advantages-border-icon-info {
+    background: url("img/bus-page/warning.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 32px;
+    height: 29px;
+    display: block;
+}
+
+.shuttle-buses__main-first-section {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.shuttle-buses__main-first-section-block {
+    width: 47%;
+    display: flex;
+    align-items: center;
+}
+
+.shuttle-buses__main-first-section-block-img {
+    min-width: 55px;
+    display: flex;
+    justify-content: center;
+    margin-right: 28px;
+}
+
+.shuttle-buses__main-first-section-icon {
+    width: 53px;
+    height: 68px;
+}
+
+.shuttle-buses__main-first-section-icon-n1 {
+    background: url("img/bus-page/n1.svg") no-repeat center;
+    background-size: 100% auto;
+}
+
+.shuttle-buses__main-first-section-icon-n2 {
+    background: url("img/bus-page/n2.svg") no-repeat center;
+    background-size: 100% auto;
+}
+
+.shuttle-buses__main-first-section-block-text {
+    max-width: 358px;
+}
+
+.article_page .shuttle-buses__main-first-section-block-text p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.article_page.shuttle-buses  .shuttle-buses__main-color-text {
+    color: #F9856E;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-color-text-marginBottom {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.shuttle-buses__main-line {
+    border: 1px dashed #999999;
+    opacity: 0.6;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.article_page.main .shuttle-buses__main-destination-title {
+    display: flex;
+    align-items: center;
+    color: #F9856E;
+    font-size: 18px;
+    justify-content: center;
+    margin-top: -19px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-sun {
+    background: url("img/bus-page/sunny.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-right: 10px;
+}
+
+.shuttle-buses__main-destination-container {
+    display: flex;
+}
+
+.shuttle-buses__main-destination-content {
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+.shuttle-buses__main-destination-img {
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.shuttle-buses__main-destination-content-text {
+    position: absolute;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-1.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 50px;
+}
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-2.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 50px;
+}
+
+.shuttle-buses__main-destination-container-three .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-2.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 50px;
+}
+
+.shuttle-buses__main-destination-container-fourth .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-3.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 50px;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-4.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 60px;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-5.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 85px;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-6.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 118px;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-7.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 118px;
+}
+
+.shuttle-buses__main-destination-container-nine .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-8.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 55px;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-content-text-2 {
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+    top: -10px;
+    left: 33%;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-content-text-3 {
+    left: 49%;
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: -5px;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-content-text-4 {
+    right: 24%;
+    top: -10px;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-content-text-5 {
+    right: 14%;
+    top: -10px;
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-first .shuttle-buses__main-destination-content-text-6 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 3%;
+}
+
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-content-text-2 {
+    font-size: 18px;
+    top: -10px;
+    left: 22%;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-content-text-3 {
+    left: 49%;
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: -5px;
+}
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-content-text-4 {
+    right: 22%;
+    top: -10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9856E;
+}
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-content-text-4 span {
+    font-size: 12px;
+    color: #555555;
+    font-weight: normal;
+}
+
+.shuttle-buses__main-destination-container-second .shuttle-buses__main-destination-content-text-5 {
+    right: 3%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+
+.shuttle-buses__main-destination-container-three .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-three .shuttle-buses__main-destination-content-text-2 {
+    font-size: 18px;
+    top: -10px;
+    left: 22%;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-three .shuttle-buses__main-destination-content-text-3 {
+    left: 49%;
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: -5px;
+}
+
+.shuttle-buses__main-destination-container-three .shuttle-buses__main-destination-content-text-4 {
+    right: 35%;
+    top: -10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9856E;
+}
+
+.shuttle-buses__main-destination-container-three .shuttle-buses__main-destination-content-text-5 {
+    right: 3%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+
+.shuttle-buses__main-destination-container-fourth .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-fourth .shuttle-buses__main-destination-content-text-2 {
+    font-size: 18px;
+    top: -10px;
+    left: 22%;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-fourth .shuttle-buses__main-destination-content-text-3 {
+    left: 49%;
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: -5px;
+}
+
+.shuttle-buses__main-destination-container-fourth .shuttle-buses__main-destination-content-text-4 {
+    right: 3%;
+    top: -10px;
+    font-size: 18px;
+    color: #555555;
+}
+
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-2 {
+    color: #F9856E;
+    font-size: 18px;
+    font-weight: bold;
+    top: 5px;
+    left: 25%;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-3 {
+    left: 45.5%;
+    color: #555555;
+    font-size: 18px;
+    top: -10px;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-4 {
+    right: 41%;
+    top: 15px;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-5 {
+    right: 20%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-6 {
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+    top: 20px;
+    right: 12.5%;
+}
+
+.shuttle-buses__main-destination-container-five .shuttle-buses__main-destination-content-text-7 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 3%;
+}
+
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-2 {
+    color: #555555;
+    font-size: 18px;
+    top: -10px;
+    left: 16%;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-3 {
+    left: 43.5%;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 20px;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-4 {
+    right: 46%;
+    top: 85px;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-5 {
+    right: 25%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-6 {
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+    top: 10px;
+    right: 15.5%;
+}
+
+.shuttle-buses__main-destination-container-six .shuttle-buses__main-destination-content-text-7 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 3%;
+}
+
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-2 {
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 12px;
+    left: 11%;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-3 {
+    left: 26%;
+    color: #555555;
+    font-size: 18px;
+    top: -10px;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-4 {
+    left: 30%;
+    top: 28px;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-5 {
+    left: 40%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-6 {
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+    top: 43px;
+    right: 52.5%;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-7 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 40%;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-8 {
+    top: 53px;
+    right: 38.5%;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-9 {
+    color: #555555;
+    font-size: 18px;
+    top: -10px;
+    right: 23.5%;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-10 {
+    right: 22%;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 67px;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-11 {
+    right: 16%;
+    top: 20px;
+    font-size: 14px;
+    color: #555555;
+    width: 62px;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-12 {
+    right: 7%;
+    top: 80px;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-seven .shuttle-buses__main-destination-content-text-13 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 3%;
+}
+
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-4 {
+    left: 30%;
+    top: 28px;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-5 {
+    left: 40%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-6 {
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+    top: 43px;
+    right: 52.5%;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-7 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 40%;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-8 {
+    top: 53px;
+    right: 38.5%;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-9 {
+    color: #555555;
+    font-size: 18px;
+    top: -10px;
+    right: 23.5%;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-10 {
+    right: 22%;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 67px;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-11 {
+    right: 16%;
+    top: 20px;
+    font-size: 14px;
+    color: #555555;
+    width: 62px;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-12 {
+    right: 7%;
+    top: 80px;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-eight .shuttle-buses__main-destination-content-text-13 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 3%;
+}
+
+
+.shuttle-buses__main-destination-container-nine .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-nine .shuttle-buses__main-destination-content-text-2 {
+    color: #555555;
+    font-size: 18px;
+    top: 12px;
+    left: 41%;
+}
+
+.shuttle-buses__main-destination-container-nine .shuttle-buses__main-destination-content-text-3 {
+    left: 49.5%;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 57px;
+}
+
+.shuttle-buses__main-destination-container-nine .shuttle-buses__main-destination-content-text-4 {
+    right: 3%;
+    top: -10px;
+    font-size: 18px;
+    color: #555555;
+}
+
+
+.shuttle-buses__main-destination-img-n3 {
+    background: url("img/bus-page/n3.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n4 {
+    background: url("img/bus-page/n4.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n5 {
+    background: url("img/bus-page/n5.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n6 {
+    background: url("img/bus-page/n6.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n7 {
+    background: url("img/bus-page/n7.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n8 {
+    background: url("img/bus-page/n8.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n10 {
+    background: url("img/bus-page/n10.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n11 {
+    background: url("img/bus-page/n11.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-destination-img-n22 {
+    background: url("img/bus-page/n22.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 53px;
+    height: 68px;
+    display: block;
+}
+
+.shuttle-buses__main-advantages-border-orange {
+    border-color: #F9856E;
+    padding: 0 15px 26px 21px;
+    margin-top: 71px;
+    margin-bottom: 42px;
+}
+
+.main.article_page .shuttle-buses__main-advantages-border-orange h3 {
+    color: #555555;
+    font-size: 24px;
+    text-align: center;
+}
+
+.shuttle-buses__main-advantages-border-orange-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shuttle-buses__main-advantages-border-orange-contentBlock {
+    width: 47%;
+    display: flex;
+}
+
+.shuttle-buses__main-advantages-border-orange-contentBlock-img {
+    min-width: 45px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.icon-child {
+    background: url("img/bus-page/baby.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+.icon-girl {
+    background: url("img/bus-page/girl.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 30px;
+    height: 50px;
+    display: block;
+}
+
+.article_page  .shuttle-buses__main-advantages-border-orange-contentBlock-text {
+    color: #555555;
+    font-size: 18px;
+    text-align: left !important;
+}
+
+.shuttle-buses__main-advantages-border-orange-contentBlock-text span {
+    font-weight: bold;
+}
+
+.shuttle-buses__main-additionalFlights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shuttle-buses__main-additionalFlights-block {
+    width: 50%;
+}
+
+.shuttle-buses__main-additionalFlights-block ul {
+    margin-top: 7px;
+}
+
+.article_page .shuttle-buses__main-additionalFlights-block li {
+    list-style-type: none;
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.shuttle-buses__main-additionalFlights-block span {
+    font-weight: bold;
+    color: #F9856E;
+}
+
+.shuttle-buses__main-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shuttle-buses__main-photo-block {
+    width: 48.5%;
+    margin: 0;
+}
+
+.article_page .shuttle-buses__main-photo-block img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 31px;
+}
+
+.shuttle-buses__main-photo-block figcaption {
+    margin-top: 7px;
+    display: block;
+    font-size: 16px;
+    color: #555555;
+}
+
+.shuttle-buses__main-priceVlas {
+    display: flex;
+}
+
+.shuttle-buses__main-list-namePrice li,
+.shuttle-buses__main-list-price li {
+    list-style-type: none !important;
+}
+
+.article_page.main .shuttle-buses__main-priceVarna a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.article_page .shuttle-buses__main-list-price li {
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.article_page .shuttle-buses__main-list-namePrice li {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.shuttle-buses__main-list-price span {
+    margin-left: 27px;
+    margin-right: 26px;
+}
+
+.shuttle-buses__main-priceVarna-block {
+    display: flex;
+    width: 50%;
+}
+
+.shuttle-buses__main-priceVarna-container {
+    display: flex;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-9.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 118px;
+}
+
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-4 {
+    left: 10%;
+    top: 20px;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-5 {
+    left: 26%;
+    top: -10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-6 {
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+    top: 37px;
+    right: 65.5%;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-7 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 54%;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-8 {
+    top: 53px;
+    right: 51.5%;
+    font-size: 18px;
+    color: #F9856E;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-9 {
+    color: #555555;
+    font-size: 18px;
+    top: -10px;
+    right: 42.5%;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-10 {
+    right: 25%;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 64px;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-11 {
+    right: 18%;
+    top: -10px;
+    font-size: 18px;
+    color: #555555;
+    width: 62px;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-12 {
+    right: 7%;
+    top: 76px;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.shuttle-buses__main-destination-container-ten .shuttle-buses__main-destination-content-text-13 {
+    font-size: 18px;
+    color: #555555;
+    top: -10px;
+    right: 3%;
+    text-align: right;
+}
+
+.shuttle-buses__main-destination-container-eleven .shuttle-buses__main-destination-content-text-1 {
+    top: -10px;
+    left: 3%;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-eleven .shuttle-buses__main-destination-content-text-3 {
+    left: 49.5%;
+    color: #F9856E;
+    font-weight: bold;
+    font-size: 18px;
+    top: 3px;
+}
+
+.shuttle-buses__main-destination-container-eleven .shuttle-buses__main-destination-content-text-4 {
+    right: 3%;
+    top: -10px;
+    font-size: 18px;
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-container-eleven .shuttle-buses__main-destination-arrow {
+    background: url("img/bus-page/arrows-10.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 44px;
+}
+
+.shuttle-buses__main-priceBurgas {
+    margin-bottom: 30px;
+}
+
+.article_page .shuttle-buses__main-priceBurgas-route {
+    text-align: center;
+    font-size: 18px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.shuttle-buses__main-priceBurgas-routeIndent {
+    margin-top: 60px;
+}
+
+.article_page .shuttle-buses__main-priceBurgas-text {
+    font-size: 18px;
+    text-align: left;
+    color: #555555;
+}
+
+.shuttle-buses__main-priceBurgas-firstText {
+    margin-bottom: 35px;
+}
+
+.shuttle-buses__main-priceBurgas-deleted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.shuttle-buses__main-priceBurgas-deletedBlock {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.shuttle-buses__main-priceBurgas-deletedBlock * {
+    padding-bottom: 0 !important;
+}
+
+.shuttle-buses__main-priceBurgas-secondText {
+    margin-top: 70px;
+}
+
+.shuttle-buses__main-priceBurgas-deletedBlock span:first-child {
+    background: url("img/bus-page/busIcon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 40px;
+    height: 19px;
+    display: block;
+    margin-right: 13px;
+}
+
+.shuttle-buses__main-priceBurgas-deletedBlock p {
+    font-size: 16px !important;
+    line-height: 30px;
+}
+
+.article_page .shuttle-buses__main-priceBurgas-deletedBlock-orange {
+    color: #F9856E !important;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.shuttle-buses__main-priceBurgas-deletedBlock-title {
+    margin-right: 30px;
+}
+
+.shuttle-buses__main-priceBurgas-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shuttle-buses__main-priceBurgas-container figure {
+    margin: 0;
+    width: 48%;
+}
+
+.shuttle-buses__main-priceBurgas-container figure img {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    padding-bottom: 7px;
+}
+
+.shuttle-buses__main-priceBurgas-container figcaption {
+    font-size: 16px;
+    color: #555555;
+}
+
+.shuttle-buses__main-touristGuide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shuttle-buses__main-touristGuide-block {
+    width: 31.5%;
+    margin-top: 60px;
+}
+
+.article_page .shuttle-buses__main-touristGuide-block p {
+    font-size: 18px;
+    color: #555555;
+    text-align: left;
+}
+
+.shuttle-buses__main-touristGuide-block-icon {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.shuttle-buses__main-touristGuide-block-img {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+}
+
+.shuttle-buses__main-touristGuide-block-iconTicket {
+    background: url("img/bus-page/ticket-purchase.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 54px;
+    height: 52px;
+}
+
+.shuttle-buses__main-touristGuide-block-iconArrows {
+    background: url("img/bus-page/arrows-icon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 59px;
+    height: 45px;
+}
+
+.shuttle-buses__main-touristGuide-block-iconPeople {
+    background: url("img/bus-page/people-icon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 50px;
+    height: 58px;
+}
+
+.shuttle-buses__main-touristGuide-block-iconRoute {
+    background: url("img/bus-page/routeIcon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 57px;
+    height: 56px;
+}
+
+.shuttle-buses__main-touristGuide-block-iconBusstop {
+    background: url("img/bus-page/bus-stop.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 63px;
+    height: 60px;
+}
+
+.shuttle-buses__main-touristGuide-block-iconMap {
+    background: url("img/bus-page/mapIcon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 57px;
+    height: 56px;
+}
+
+.shuttle-buses__main-additionalFlights-text {
+    margin-top: 28px;
+    margin-bottom: 7px;
+}
+
+.article_page.shuttle-buses b {
+    color: #555555;
+}
+
+.shuttle-buses__main-destination-contentMobil {
+    display: none;
+}
+
+.shuttle-buses__main-list-namePrice-route {
+    width: 100%;
+}
+
+.shuttle-buses__main-list-namePrice-varnaFirst {
+    max-width: 222px;
+}
+
+.shuttle-buses__main-list-namePrice-varnaSecond {
+    max-width: 322px;
+}
+
+.shuttle-buses__main-list-namePrice-routeFirst {
+    max-width: 346px;
+}
+
+.shuttle-buses__main-list-namePrice-routeSecond {
+    max-width: 110px;
+}
+
+.shuttle-buses__main-list-namePrice-routeThree {
+    max-width: 195px;
+}
+
+.shuttle-buses__main-list-namePrice {
+    width: 100%;
+}
+
+.shuttle-buses__main-list-namePrice li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 480px;
+    width: 100%;
+}
+
+.shuttle-buses__main-list-namePrice li p {
+    padding-bottom: 0;
+}
+
+.shuttle-buses__main-list-namePrice-price {
+    min-width: 59px;
+    font-weight: bold;
+    color: #F9856E !important;
+}
+
+@media (max-width: 991.98px) {
+    .shuttle-buses__main-advantages-block {
+        width: 100%;
+    }
+
+    .shuttle-buses__main-priceBurgas-deleted {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shuttle-buses__main-priceBurgas-deletedBlock {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .shuttle-buses__main-touristGuide-block {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .shuttle-buses__main-priceBurgas-routeIndent {
+        margin-top: 20px;
+    }
+
+    .shuttle-buses__main-priceBurgas-secondText {
+        margin-top: 30px;
+    }
+
+    .shuttle-buses__main-advantages-border-blue {
+        padding: 15px 20px;
+    }
+
+    .shuttle-buses__main-advantages-border-orange {
+        padding: 0 19px 15px 15px;
+    }
+
+    .shuttle-buses__main-destination-contentMobil {
+        display: block;
+    }
+
+    .shuttle-buses__main-destination-contentMobil span {
+        font-weight: bold;
+        color: #F9856E;
+    }
+
+    .shuttle-buses__main-destination-contentMobil span.shuttle-buses__main-destination-contentMobil-additionally {
+        font-weight: normal;
+        color: #555555;
+        font-size: 12px;
+    }
+
+    .shuttle-buses__main-first-section-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .shuttle-buses__main-first-section,
+    .shuttle-buses__main-additionalFlights {
+        flex-direction: column;
+    }
+
+    .shuttle-buses__main-additionalFlights-block {
+        width: 100%;
+    }
+
+    .shuttle-buses__main-photo-block {
+        width: 100%;
+    }
+
+    .shuttle-buses__main-list-price span {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .shuttle-buses__main-touristGuide-block {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .shuttle-buses__main-priceBurgas-container {
+        flex-direction: column;
+    }
+
+    .shuttle-buses__main-priceBurgas-container figure {
+        width: 100%;
+    }
+
+    .shuttle-buses__main-advantages-border-orange-content {
+        flex-direction: column;
+    }
+
+    .shuttle-buses__main-advantages-border-orange-contentBlock {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .shuttle-buses__main-priceVarna-container {
+        flex-direction: column;
+    }
+
+    .shuttle-buses__main-priceVarna-block {
+        width: 100%;
+    }
+
+    .article_page.shuttle-buses h1 {
+        font-size: 24px;
+    }
+
+    .main.article_page .shuttle-buses__main-advantages__h2 {
+        font-size: 22px;
+    }
+
+    .shuttle-buses .shuttle-buses__main-text,
+    .article_page .shuttle-buses__main-first-section-block-text p,
+    .article_page.shuttle-buses .shuttle-buses__main-color-text,
+    .article_page.main .shuttle-buses__main-destination-title,
+    .article_page .shuttle-buses__main-advantages-border-orange-contentBlock-text,
+    .article_page .shuttle-buses__main-additionalFlights-block li,
+    .article_page.main .shuttle-buses__main-priceVarna p:first-child,
+    .article_page .shuttle-buses__main-priceBurgas-text,
+    .shuttle-buses__main-priceBurgas-container figcaption,
+    .article_page .shuttle-buses__main-touristGuide-block p {
+        font-size: 16px;
+    }
+
+    .main.article_page .shuttle-buses__main-advantages-border-orange h3 {
+        font-size: 20px;
+    }
+
+    .shuttle-buses__main-photo-block figcaption,
+    .article_page .shuttle-buses__main-list-namePrice li {
+        font-size: 14px;
+    }
+
+    .shuttle-buses__main-destination-content {
+        display: none;
+    }
+
+    .shuttle-buses__main-destination-container {
+        flex-direction: column;
+    }
+
+    .shuttle-buses__main-destination-img {
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .shuttle-buses__main-advantages-block {
+        flex-direction: column;
+    }
+
+    .shuttle-buses__main-advantages-block-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .shuttle-buses__main-advantages-block-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 455px) {
+    .shuttle-buses__main-list-namePrice-route {
+        max-width: 60%;
+        line-height: 16px !important;
+        text-align: left !important;
     }
 }
