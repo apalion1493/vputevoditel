@@ -39,8 +39,14 @@ body {
 }
 
 .header-section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     max-width: 1060px;
     margin-left: auto;
@@ -67,10 +73,18 @@ body {
     min-width: 216px;
     height: 50px;
     border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     margin-left: 40px;
 }
@@ -79,6 +93,8 @@ body {
     background: #ffffff;
     color: #555555;
     border-color: #555555;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -89,11 +105,16 @@ body {
     height: 22px;
     position: absolute;
     left: 30px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
 .header-section-title a:hover:before {
+    -webkit-filter: invert(100%);
     filter: invert(100%);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -110,7 +131,12 @@ body {
 }
 
 .vputevoditel-navigation__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 60px;
 }
@@ -126,15 +152,27 @@ body {
 }
 
 .vputevoditel-navigation__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .vputevoditel-navigation__container-item {
     min-width: 235px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 60px;
     position: relative;
@@ -164,7 +202,11 @@ body {
     height: 45px;
     min-width: 45px;
     margin-bottom: 18px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -245,7 +287,11 @@ body {
 }
 
 .vputevoditel-resorts__first-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -256,13 +302,21 @@ body {
 .vputevoditel-information-card {
     width: 100%;
     max-width: 402px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     position: relative;
     z-index: 200;
     border-radius: 5px;
     background: #ffffff;
+    -webkit-box-shadow: 0 10px 36px -18px #333;
     box-shadow: 0 10px 36px -18px #333;
 }
 
@@ -327,8 +381,12 @@ body {
 .vputevoditel-information-card__text {
     min-height: 65px;
     max-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #ffffff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -364,7 +422,10 @@ body {
 }
 
 .vputevoditel-information-card:hover {
+    -webkit-filter: brightness(70%);
     filter: brightness(70%);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -403,8 +464,15 @@ body {
 }
 
 .vputevoditel-medicine__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     /*overflow: hidden;*/
@@ -423,7 +491,11 @@ body {
 }
 
 .vputevoditel-medicine__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
     margin-top: 51px;
@@ -459,6 +531,8 @@ body {
     left: -410px;
     z-index: 190;
     bottom: -22px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
     transform: rotate(30deg);
 }
 
@@ -474,9 +548,16 @@ body {
 }
 
 .vputevoditel-food__block-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 45px;
     position: relative;
@@ -567,9 +648,16 @@ body {
 }
 
 .vputevoditel-transport__block-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -601,17 +689,27 @@ body {
     max-width: 246px;
     width: 100%;
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 54px auto 40px;
     background: #F9856E;
     border-radius: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
 .vputevoditel-transport__button:hover {
     background: #D27866;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -644,9 +742,16 @@ body {
 }
 
 .vputevoditel-viza__country {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 60px;
@@ -655,8 +760,15 @@ body {
 .vputevoditel-viza__country-block {
     max-width: 186px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -664,8 +776,14 @@ body {
 .vputevoditel-viza__country-block-img {
     min-width: 137px;
     height: 105px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 
@@ -676,7 +794,7 @@ body {
     height: 105px;
     display: block;
     border-radius: 5px;
- }
+}
 
 .vputevoditel-viza__country-block-ukraine {
     background: url("img/ukraine-vputevod@2x.png") no-repeat center;
@@ -753,8 +871,14 @@ body {
 }
 
 .vputevoditel-road__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -827,9 +951,16 @@ body {
 }
 
 .vputevoditel-aquapark__block-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -902,16 +1033,30 @@ body {
 }
 
 .vputevoditel-attractions__section-main-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .vputevoditel-notes__section-main-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -972,7 +1117,11 @@ body {
 
 .vputevoditel-attractions__section-another-info,
 .vputevoditel-notes__section-another-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     z-index: 100;
     position: relative;
@@ -996,7 +1145,11 @@ body {
     margin-bottom: 30px;
     margin-left: 35px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1014,8 +1167,11 @@ body {
     min-width: 12px;
     min-height: 2px;
     height: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 35px;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     margin-top: 11px;
 }
@@ -1143,9 +1299,16 @@ body {
 
 .vputevoditel-resorts__housing-list,
 .internal-vputevoditel-page__housing-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1155,6 +1318,7 @@ body {
     /*width: 100%;*/
     margin-left: 10px;
     margin-right: 10px;
+    -webkit-box-shadow: 0 10px 36px -18px #333;
     box-shadow: 0 10px 36px -18px #333;
     margin-bottom: 20px;
 }
@@ -1177,8 +1341,14 @@ body {
 }
 
 .vputevoditel-resorts__cart-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     width: 66%;
 }
@@ -1305,6 +1475,7 @@ body {
 
     .vputevoditel-aquapark__block-info,
     .vputevoditel-food__block-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -1325,14 +1496,17 @@ body {
     }
 
     .vputevoditel-transport__block-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
     .vputevoditel-attractions__section-main-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
     .vputevoditel-notes__section-main-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 }
@@ -1348,6 +1522,9 @@ body {
 
 @media screen and (max-width: 1199.98px) {
     .vputevoditel-resorts__first-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1357,13 +1534,17 @@ body {
 
     .vputevoditel-resorts__cart-block {
         width: 100%;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-top: 30px;
     }
 
     .vputevoditel-medicine__block {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -1400,7 +1581,10 @@ body {
     }
 
     .header-section-title {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -1423,6 +1607,7 @@ body {
     }
 
     .vputevoditel-transport__block-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -1431,10 +1616,12 @@ body {
     }
 
     .vputevoditel-food__block-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
     .vputevoditel-road__section {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -1445,6 +1632,7 @@ body {
 
 @media screen and (max-width: 854px) {
     .vputevoditel-attractions__section-main-info {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 }
@@ -1457,12 +1645,16 @@ body {
     }
 
     .vputevoditel-viza__country {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
     }
 }
 
 @media screen and (max-width: 854px) {
     .vputevoditel-food__block-info {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -1472,6 +1664,7 @@ body {
     }
 
     .vputevoditel-road__section {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 }
@@ -1539,6 +1732,9 @@ body {
 
 @media screen and (max-width: 680px) {
     .vputevoditel-attractions__section-another-info, .vputevoditel-notes__section-another-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1553,11 +1749,11 @@ body {
     }
 
     /*.vputevoditel-title {*/
-        /*font-size: 28px !important;*/
+    /*font-size: 28px !important;*/
     /*}*/
 
     /*.vputevoditel-attractions__container .vputevoditel-title {*/
-        /*font-size: 20px !important;*/
+    /*font-size: 20px !important;*/
     /*}*/
 }
 
@@ -1583,6 +1779,8 @@ body {
 
 @media screen and (max-width: 412px) {
     .vputevoditel-viza__country {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
@@ -1594,7 +1792,11 @@ body {
 
 
 .internal-vputevoditel-page__other {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -1602,7 +1804,11 @@ body {
 .internal-vputevoditel-page__other-block {
     cursor: pointer;
     height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1665,8 +1871,12 @@ body {
     bottom: 0;
     height: 100%;
     padding-top: 62px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -1675,6 +1885,7 @@ body {
 }
 
 .left-block-menu__container {
+    -webkit-box-shadow: 0 10px 20px 0 rgba(121, 119, 119, 0.29);
     box-shadow: 0 10px 20px 0 rgba(121, 119, 119, 0.29);
     height: 100%;
     background: #ffffff;
@@ -1694,6 +1905,8 @@ body {
 }
 
 .left-block-menu__section-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #F5F5F5;
 }
@@ -1706,7 +1919,12 @@ body {
     background: #ffffff;
     color: #1FA1AF;
     margin-left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 20px;
 }
@@ -1729,6 +1947,8 @@ body {
 .left-block-menu__section-menu.active .left-block-menu__tab-content {
     max-height: 100vh;
     margin-bottom: 25px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -1738,8 +1958,14 @@ body {
 
 .left-block-menu__section-icon {
     min-width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding-top: 12px;
 }
@@ -1873,6 +2099,8 @@ body {
 }
 
 .accordion dt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1908,6 +2136,8 @@ body {
     text-decoration: none;
     color: #555555;
     font-size: 20px;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
     width: 100%;
     padding-left: 20px;
@@ -1922,6 +2152,7 @@ body {
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
     -webkit-transform: rotate(-225deg);
+    -ms-transform: rotate(-225deg);
     transform: rotate(-225deg);
 }
 
@@ -1929,12 +2160,16 @@ body {
     height: auto;
     overflow: hidden;
     max-height: 50em;
+    -webkit-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
     transition: max-height 0.5s;
 }
 
 @media screen and (min-width: 48em) {
     .accordionItem {
         max-height: 15em;
+        -webkit-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
         transition: max-height 0.5s;
     }
 }
@@ -1958,15 +2193,48 @@ body {
 }
 
 
-@keyframes accordionIn {
+@-webkit-keyframes accordionIn {
     0% {
         opacity: 0;
+        -webkit-transform: scale(0.9) rotateX(-60deg);
         transform: scale(0.9) rotateX(-60deg);
+        -webkit-transform-origin: 50% 0;
         transform-origin: 50% 0;
     }
     100% {
         opacity: 1;
+        -webkit-transform: scale(1);
         transform: scale(1);
+    }
+}
+
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.9) rotateX(-60deg);
+        transform: scale(0.9) rotateX(-60deg);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@-webkit-keyframes accordionOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.9) rotateX(-60deg);
+        transform: scale(0.9) rotateX(-60deg);
     }
 }
 
@@ -1974,10 +2242,12 @@ body {
 @keyframes accordionOut {
     0% {
         opacity: 1;
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
     100% {
         opacity: 0;
+        -webkit-transform: scale(0.9) rotateX(-60deg);
         transform: scale(0.9) rotateX(-60deg);
     }
 }
@@ -2155,7 +2425,11 @@ body {
 }
 
 .vputevoditel-media-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -2167,8 +2441,14 @@ body {
 }
 
 .vputevoditel-media-container__block-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 34px;
 }
@@ -2187,15 +2467,24 @@ body {
 }
 
 .taxi-vputevoditel-page__taxi-fare {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 65px;
 }
 
 .taxi-vputevoditel-page__taxi-fare-day,
 .taxi-vputevoditel-page__taxi-fare-night {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -2222,14 +2511,24 @@ body {
 .taxi-vputevoditel-page__taxi-fare-block-icon {
     min-width: 55px;
     height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 }
 
 .taxi-vputevoditel-page__taxi-fare-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -2240,9 +2539,16 @@ body {
 }
 
 .taxi-vputevoditel-page__taxi-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     color: #777777;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 12px;
 }
@@ -2279,23 +2585,41 @@ body {
 }
 
 .taxi-vputevoditel-page__section-jotting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 70px;
 }
 
 .taxi-vputevoditel-page__section-jotting-block {
     width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .taxi-vputevoditel-page__section-jotting-block-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     min-width: 80px;
     height: 55px;
@@ -2369,6 +2693,9 @@ body {
     }
 
     .taxi-vputevoditel-page__taxi-fare {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -2416,7 +2743,7 @@ body {
     .taxi-vputevoditel-page__taxi-text span:last-child {
         font-size: 20px;
         line-height: 26px;
-         margin-top: 0;
+        margin-top: 0;
     }
 
     .taxi-vputevoditel-page__taxi-text {
@@ -2499,6 +2826,8 @@ body {
 
 .taxi-transfer__main-firstBlock {
     margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -2574,6 +2903,8 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .taxi-transfer__container-table-varna {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 47px;
 }
@@ -2639,6 +2970,9 @@ th.taxi-vputevoditel-page__table-first {
 
 @media (max-width: 767.98px) {
     .taxi-transfer__container-table-varna {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -2717,22 +3051,34 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-advantages-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 47%;
     margin-top: 40px;
 }
 
 .shuttle-buses__main-advantages-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 37px;
 }
 
 .shuttle-buses__main-advantages-block-icon {
     min-width: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 40px;
 }
@@ -2799,16 +3145,26 @@ th.taxi-vputevoditel-page__table-first {
 .shuttle-buses__main-advantages-border-blue {
     border-color: #1FA1AF;
     padding: 16px 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 8px;
 }
 
 .shuttle-buses__main-advantages-border-icon-block {
     min-width: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 23px;
 }
@@ -2822,21 +3178,33 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-first-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .shuttle-buses__main-first-section-block {
     width: 47%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .shuttle-buses__main-first-section-block-img {
     min-width: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 28px;
 }
@@ -2883,10 +3251,16 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .article_page.main .shuttle-buses__main-destination-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #F9856E;
     font-size: 18px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: -19px;
     margin-bottom: 15px;
@@ -2903,6 +3277,8 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-destination-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -2914,7 +3290,11 @@ th.taxi-vputevoditel-page__table-first {
 
 .shuttle-buses__main-destination-img {
     min-width: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 30px;
 }
@@ -3549,18 +3929,28 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-advantages-border-orange-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .shuttle-buses__main-advantages-border-orange-contentBlock {
     width: 47%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .shuttle-buses__main-advantages-border-orange-contentBlock-img {
     min-width: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 20px;
 }
@@ -3592,7 +3982,11 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-additionalFlights {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -3617,8 +4011,13 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -3642,6 +4041,8 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-priceVlas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -3657,7 +4058,11 @@ th.taxi-vputevoditel-page__table-first {
 
 .article_page .shuttle-buses__main-list-price li {
     line-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -3672,11 +4077,15 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-priceVarna-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 50%;
 }
 
 .shuttle-buses__main-priceVarna-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -3827,8 +4236,14 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-priceBurgas-deleted {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -3836,7 +4251,11 @@ th.taxi-vputevoditel-page__table-first {
 
 .shuttle-buses__main-priceBurgas-deletedBlock {
     width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -3873,7 +4292,11 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-priceBurgas-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -3895,8 +4318,13 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-touristGuide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -3919,8 +4347,14 @@ th.taxi-vputevoditel-page__table-first {
 
 .shuttle-buses__main-touristGuide-block-img {
     margin-bottom: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 61px;
 }
@@ -4009,8 +4443,14 @@ th.taxi-vputevoditel-page__table-first {
 }
 
 .shuttle-buses__main-list-namePrice li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     max-width: 480px;
     width: 100%;
@@ -4032,7 +4472,12 @@ th.taxi-vputevoditel-page__table-first {
     }
 
     .shuttle-buses__main-priceBurgas-deleted {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -4090,6 +4535,9 @@ th.taxi-vputevoditel-page__table-first {
 
     .shuttle-buses__main-first-section,
     .shuttle-buses__main-additionalFlights {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -4112,6 +4560,9 @@ th.taxi-vputevoditel-page__table-first {
     }
 
     .shuttle-buses__main-priceBurgas-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -4120,6 +4571,9 @@ th.taxi-vputevoditel-page__table-first {
     }
 
     .shuttle-buses__main-advantages-border-orange-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -4129,6 +4583,9 @@ th.taxi-vputevoditel-page__table-first {
     }
 
     .shuttle-buses__main-priceVarna-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -4171,10 +4628,15 @@ th.taxi-vputevoditel-page__table-first {
     }
 
     .shuttle-buses__main-destination-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .shuttle-buses__main-destination-img {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-right: 0;
         margin-bottom: 20px;
@@ -4183,6 +4645,9 @@ th.taxi-vputevoditel-page__table-first {
 
 @media (max-width: 575.98px) {
     .shuttle-buses__main-advantages-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
