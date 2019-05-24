@@ -176,6 +176,7 @@ body {
     align-items: center;
     margin-bottom: 60px;
     position: relative;
+    text-decoration: none;
 }
 
 .vputevoditel-navigation__container-item span {
@@ -1707,7 +1708,15 @@ body {
         font-size: 22px;
     }
 
-    .vputevoditel-resorts__text p {
+    .vputevoditel-resorts__text p,
+    .header-section-title__first-text,
+    .vputevoditel-medicine__text,
+    .vputevoditel-food__left-column-text p,
+    .vputevoditel-transport__text,
+    .vputevoditel-viza__text,
+    .vputevoditel-aquapark__left-column p,
+    .vputevoditel-attractions__first-text,
+    .vputevoditel-aquapark__left-column p {
         line-height: 22px;
     }
 
@@ -2298,6 +2307,7 @@ body {
 
 .internal-vputevoditel-page__menu-list .vputevoditel-navigation__container-item {
     min-width: 184px;
+    text-decoration: none;
 }
 
 .internal-vputevoditel-page__menu-list h3 {
