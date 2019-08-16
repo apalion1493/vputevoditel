@@ -1063,25 +1063,25 @@ body {
 
 .vputevoditel-information-card__nesebr-info {
     background: url("img/nesebr-info-vputev@2x.png") no-repeat center;
-    background-size: 101% auto;
+    background-size: cover;
     height: 362px;
 }
 
 .vputevoditel-information-card__monasteries {
     background: url("img/monasteries-vputevod@2x.png") no-repeat center;
-    background-size: 101% auto;
+    background-size: cover;
     height: 362px;
 }
 
 .vputevoditel-information-card__fortress {
     background: url("img/fortresses-vputevod@2x.png") no-repeat center;
-    background-size: 101% auto;
+    background-size: cover;
     height: 362px;
 }
 
 .vputevoditel-information-card__caves {
     background: url("img/caves-vputevod@2x.png") no-repeat center;
-    background-size: 101% auto;
+    background-size: cover;
     height: 362px;
     width: 100.1%;
 }
@@ -1671,6 +1671,14 @@ body {
 }
 
 @media screen and (max-width: 767.98px) {
+    .vputevoditel-resorts__housing {
+        margin-bottom: 20px;
+    }
+
+    .vputevoditel-navigation__container-item {
+        min-width: 145px;
+    }
+
     .homeHeadBlock.selection.vputevoditel h1 {
         font-size: 24px;
         line-height: 40px;
@@ -1732,10 +1740,68 @@ body {
 
     .iconBlockCenter {
         padding-top: 0;
+        padding-bottom: 20px;
     }
 
     .vputevoditel-navigation__section {
         padding-bottom: 0;
+    }
+
+    .vputevoditel-transport__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .vputevoditel-viza__country {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .vputevoditel-viza__text {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .vputevoditel-aquapark__left-column {
+        margin-top: 30px;
+    }
+
+    .vputevoditel-attractions__container .vputevoditel-title {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .vputevoditel-attractions__title-another {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .vputevoditel-food__block-info {
+        margin-bottom: 10px;
+    }
+
+    .vputevoditel-notes .vputevoditel-title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .vputevoditel-notes__section-another-info {
+        margin-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .vputevoditel-viza,
+    .vputevoditel-medicine__section .vputevoditel-title,
+    .vputevoditel-resorts__section h2 {
+        margin-top: 30px;
+    }
+
+    .vputevoditel-food {
+        padding-top: 30px;
+    }
+
+    .vputevoditel-transport-buss__img {
+        left: 0;
     }
 }
 
